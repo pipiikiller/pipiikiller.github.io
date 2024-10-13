@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Slideone from '../../assets/images/main-slider/slider-1.jpg';
+import Slideone from '../../assets/images/main-slider/hero_slider1.png';
 import Slidetwo from '../../assets/images/main-slider/slider-2.jpg';
 import Slidethree from '../../assets/images/main-slider/slider-3.jpg';
 import bookicon1 from '../../assets/images/resource/book-icon-1.png';

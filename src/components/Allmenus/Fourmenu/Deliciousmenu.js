@@ -36,10 +36,13 @@ function Deliciousmenu() {
                     <div className="tabs-box menu-tabs">
                         <div className="buttons">
                             <ul className="tab-buttons clearfix">
-                                <li className="tab-btn active-btn" data-tab="#tab-1"><span>MORNING</span></li>
-                                <li className="tab-btn" data-tab="#tab-2"><span>WEEKDAY LUNCH</span></li>
-                                <li className="tab-btn" data-tab="#tab-3"><span>DINNER</span></li>
-                                <li className="tab-btn" data-tab="#tab-4"><span>WINES</span></li>
+                                <li className="tab-btn active-btn" data-tab="#tab-1"><span>Burmese Street Food</span></li>
+                                <li className="tab-btn" data-tab="#tab-2"><span>Salads</span></li>
+                                <li className="tab-btn" data-tab="#tab-3"><span>Classic</span></li>
+                                <li className="tab-btn" data-tab="#tab-4"><span>Heritage Sets</span></li>
+                                <li className="tab-btn" data-tab="#tab-5"><span>Wok Kissed Greens</span></li>
+                                <li className="tab-btn" data-tab="#tab-6"><span>Drinks</span></li>
+                                <li className="tab-btn" data-tab="#tab-7"><span>Desserts</span></li>
                             </ul>
                         </div>
                         <div className="tabs-content">
@@ -228,6 +231,186 @@ function Deliciousmenu() {
                             </div>
 
                             <div className="tab" id="tab-4">
+                                <div className="row clearfix">
+                                    <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                                        <div className="inner">
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink1} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Greek Salad</Link></h5></div><div className="price"><span>$25.50</span></div></div>
+                                                    <div className="text desc"><Link to="#">Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink2} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Lasagne <span className="s-info">SEASONAL</span></Link></h5></div><div className="price"><span>$40.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink3} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Butternut Pumpkin</Link></h5></div><div className="price"><span>$10.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.</Link></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                                        <div className="inner">
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink4} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Tokusen Wagyu <span className="s-info">NEW</span></Link></h5></div><div className="price"><span>$39.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink5} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Olivas Rellenas</Link></h5></div><div className="price"><span>$25.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Avocados with crab meat, red onion, crab salad stuffed red bell pepper and  green bell pepper. Cucumber</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink6} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Opu Fish</Link></h5></div><div className="price"><span>$49.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</Link></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tab" id="tab-5">
+                                <div className="row clearfix">
+                                    <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                                        <div className="inner">
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink1} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Greek Salad</Link></h5></div><div className="price"><span>$25.50</span></div></div>
+                                                    <div className="text desc"><Link to="#">Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink2} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Lasagne <span className="s-info">SEASONAL</span></Link></h5></div><div className="price"><span>$40.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink3} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Butternut Pumpkin</Link></h5></div><div className="price"><span>$10.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.</Link></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                                        <div className="inner">
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink4} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Tokusen Wagyu <span className="s-info">NEW</span></Link></h5></div><div className="price"><span>$39.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink5} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Olivas Rellenas</Link></h5></div><div className="price"><span>$25.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Avocados with crab meat, red onion, crab salad stuffed red bell pepper and  green bell pepper. Cucumber</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink6} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Opu Fish</Link></h5></div><div className="price"><span>$49.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</Link></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tab" id="tab-6">
+                                <div className="row clearfix">
+                                    <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                                        <div className="inner">
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink1} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Greek Salad</Link></h5></div><div className="price"><span>$25.50</span></div></div>
+                                                    <div className="text desc"><Link to="#">Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese.</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink2} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Lasagne <span className="s-info">SEASONAL</span></Link></h5></div><div className="price"><span>$40.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink3} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Butternut Pumpkin</Link></h5></div><div className="price"><span>$10.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand.</Link></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                                        <div className="inner">
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink4} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Tokusen Wagyu <span className="s-info">NEW</span></Link></h5></div><div className="price"><span>$39.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices.</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink5} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Olivas Rellenas</Link></h5></div><div className="price"><span>$25.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Avocados with crab meat, red onion, crab salad stuffed red bell pepper and  green bell pepper. Cucumber</Link></div>
+                                                </div>
+                                            </div>
+
+                                            <div className="dish-block">
+                                                <div className="inner-box">
+                                                    <div className="dish-image"><Link to="#"><img src={drink6} alt="" /></Link></div>
+                                                    <div className="title clearfix"><div className="ttl clearfix"><h5><Link to="#">Opu Fish</Link></h5></div><div className="price"><span>$49.00</span></div></div>
+                                                    <div className="text desc"><Link to="#">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</Link></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tab" id="tab-7">
                                 <div className="row clearfix">
                                     <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                                         <div className="inner">

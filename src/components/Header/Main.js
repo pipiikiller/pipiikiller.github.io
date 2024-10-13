@@ -71,7 +71,7 @@ function Main() {
                             <li className="dropdown"><Link to="#" onClick={() => setMenu(menu === true ? false : true)} >Menus<button type="button" className="btn-expander"><i className="far fa-angle-down"></i></button></Link>
                                 <ul style={{ display: menu ? "block" : "none" }}>
                                     {/* <li><Link to="/menuone" onClick={() => setActive(false)}>Menu List 1</Link></li> */}
-                                    <li><Link to="/menutwo" onClick={() => setActive(false)}>Online Menu</Link></li>
+                                    {/* <li><Link to="/menutwo" onClick={() => setActive(false)}>Online Menu</Link></li> */}
                                     {/* <li><Link to="/menuthree" onClick={() => setActive(false)}>Menu List 3</Link></li> */}
                                     <li><Link to="/menufour" onClick={() => setActive(false)}>Dine in Menu</Link></li>
                                 </ul>

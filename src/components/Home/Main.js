@@ -40,7 +40,7 @@ function Main() {
                 <Link to="#">Home</Link>
                 <ul>
                   <li>
-                    <Link to="/">APONNAR</Link>
+                    <Link to="/">ARPONNAR</Link>
                   </li>
                   {/* <li><Link to="/hometwo">Home 1 Center Header</Link></li>
                                     <li><Link to="/">Home 3 Video Hero</Link></li> */}

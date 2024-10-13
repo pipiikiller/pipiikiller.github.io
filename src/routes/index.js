@@ -41,9 +41,9 @@ function Index() {
         <Route path="/homethree" element={<Homethree />} /> */}
         <Route path="/menu" element={<Menu />} />
         {/* <Route path="/menuone" element={<Menuone />} /> */}
-        <Route path="/menutwo" element={<Menutwo />} />
-        <Route path="/menuthree" element={<Menuthree />} />
-        {/* <Route path="/menufour" element={<Menufour />} /> */}
+        {/* <Route path="/menutwo" element={<Menutwo />} /> */}
+        {/* <Route path="/menuthree" element={<Menuthree />} /> */}
+        <Route path="/menufour" element={<Menufour />} />
         <Route path="/about" element={<About />} />
         {/* <Route path="/ourchefs" element={<Chefs />} /> */}
         <Route path="/contact" element={<Contact />} />

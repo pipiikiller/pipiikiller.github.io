@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import bgone from "../../assets/images/background/bg-5.png";
-import Bgtwo from "../../assets/images/background/bg-6.png";
-import five from "../../assets/images/resource/menu-image-5.png";
+import bgone from "../../assets/images/background/bg-5-left.png";
+import Bgtwo from "../../assets/images/background/bg-5-right.png";
+import five from "../../assets/images/menus/La_Phet_Toke.png";
 import six from "../../assets/images/resource/menu-image-6.png";
 import seven from "../../assets/images/resource/menu-image-7.png";
 import eight from "../../assets/images/resource/menu-image-8.png";

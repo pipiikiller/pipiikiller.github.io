@@ -11,6 +11,8 @@ import Special from '../Menhome/Special'
 import Contact from '../Menhome/Contact'
 import Videosection from '../Menhome/Videosection'
 import Feature from '../Menhome/Feature'
+import { Link } from 'react-router-dom'
+import sidebarlogo from '../../assets/images/resource/sidebar-logo.png'
 
 function Main() {
     return (
@@ -20,7 +22,7 @@ function Main() {
             <section className="hidden-bar">
                 <div className="inner-box">
                     <div className="cross-icon hidden-bar-closer"><span className="far fa-close"></span></div>
-                    <div className="logo-box"><Link to="/" title="Delici - Restaurants React Template"><img src={sidebarlogo} alt="" title="Delici - Restaurants HTML Template" /></Link></div>
+                    <div className="logo-box"><Link to="/" title="Arponnar Burmese Restaurant"><img src={sidebarlogo} alt="" title="Arponnar Burmese Restaurant" /></Link></div>
 
 
                     <div className="side-menu">

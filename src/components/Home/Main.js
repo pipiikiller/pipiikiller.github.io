@@ -25,11 +25,11 @@ function Main() {
             <span className="far fa-close"></span>
           </div>
           <div className="logo-box">
-            <Link to="/" title="Delici - Restaurants React Template">
+            <Link to="/" title="Arponnar Burmese Restaurant">
               <img
                 src={sidebarlogo}
                 alt=""
-                title="Delici - Restaurants HTML Template"
+                title="Arponnar Burmese Restaurant"
               />
             </Link>
           </div>

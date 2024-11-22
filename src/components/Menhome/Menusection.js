@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import bgone from "../../assets/images/background/bg-5-left.png";
 import Bgtwo from "../../assets/images/background/bg-5-right.png";
 import five from "../../assets/images/menus/La_Phet_Toke.png";
-import six from "../../assets/images/resource/menu-image-6.png";
+import six from "../../assets/images/menus/Kout_Nyin_Paung.png";
 import seven from "../../assets/images/resource/menu-image-7.png";
 import eight from "../../assets/images/resource/menu-image-8.png";
 import nine from "../../assets/images/resource/menu-image-9.png";

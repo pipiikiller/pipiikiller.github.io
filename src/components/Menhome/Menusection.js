@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import bgone from "../../assets/images/background/bg-5-left.png";
-import Bgtwo from "../../assets/images/background/bg-5-right.png";
+import bgone from "../../assets/images/delicious_menus/Delicious_32p49x36p55.png";
+import Bgtwo from "../../assets/images/delicious_menus/Delicious_32p49x36p55_2.png";
 import five from "../../assets/images/menus/La_Phet_Toke.png";
 import six from "../../assets/images/menus/Kout_Nyin_Paung.png";
 import seven from "../../assets/images/resource/menu-image-7.png";

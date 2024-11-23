@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Imgtwo from '../../assets/images/background/image-3.jpg';
+import Imgtwo from '../../assets/images/watch_our_videos/Watch_Our_Video66p32x32p74.png';
 import { Link } from 'react-router-dom';
 import AnimatedNumber from 'animated-number-react';
 import Iframe from 'react-iframe';

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ce1f911c.css",
-    "main.js": "/static/js/main.06041cbf.js",
+    "main.js": "/static/js/main.6140acf4.js",
     "static/js/787.76d25a7e.chunk.js": "/static/js/787.76d25a7e.chunk.js",
     "static/media/Watch_Our_Video66p32x32p74.png": "/static/media/Watch_Our_Video66p32x32p74.20724a1c21e5cc0807e6.png",
     "static/media/Lobster_33p16x31.75.png": "/static/media/Lobster_33p16x31.75.bdd223bc4aea6abafcd7.png",
@@ -11,6 +11,7 @@
     "static/media/fa-thin-100.ttf": "/static/media/fa-thin-100.e979819d1e09a53c99e5.ttf",
     "static/media/Delicious_32p49x36p55.png": "/static/media/Delicious_32p49x36p55.218480f90c6fffe0e6f7.png",
     "static/media/fa-light-300.ttf": "/static/media/fa-light-300.c92b45ddbbac86f40dd8.ttf",
+    "static/media/award_33p16x31p75.png": "/static/media/award_33p16x31p75.77ba63190367dc90be78.png",
     "static/media/fa-regular-400.ttf": "/static/media/fa-regular-400.ea55734feb601c85fbad.ttf",
     "static/media/Delicious_32p49x36p55_2.png": "/static/media/Delicious_32p49x36p55_2.695ca7db1cba3a0d3c24.png",
     "static/media/slider-3.jpg": "/static/media/slider-3.e0b7e807672a2f41a9ca.jpg",
@@ -140,11 +141,11 @@
     "static/media/separator.svg": "/static/media/separator.fc5405c5995258e079d7072ed26a6975.svg",
     "index.html": "/index.html",
     "main.ce1f911c.css.map": "/static/css/main.ce1f911c.css.map",
-    "main.06041cbf.js.map": "/static/js/main.06041cbf.js.map",
+    "main.6140acf4.js.map": "/static/js/main.6140acf4.js.map",
     "787.76d25a7e.chunk.js.map": "/static/js/787.76d25a7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce1f911c.css",
-    "static/js/main.06041cbf.js"
+    "static/js/main.6140acf4.js"
   ]
 }

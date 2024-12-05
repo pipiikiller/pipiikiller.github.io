@@ -1,8 +1,9 @@
 import React from 'react'
-import twoBg from '../../assets/images/background/image-5.jpg';
+import twoBg from '../../assets/images/aboutus/award_33p16x31p75.png'
 import threebg from '../../assets/images/background/image-6.jpg';
 import { Link } from 'react-router-dom'
 import bgfive from '../../assets/images/background/image-5.jpg'
+import awardWinningImg from '../../assets/images/aboutus/award_33p16x31p75.png'
 import bg12 from '../../assets/images/background/bg-12.png'
 import signaturetwo from '../../assets/images/resource/signature-2.png'
 import bg13 from '../../assets/images/background/bg-13.png'
@@ -17,7 +18,7 @@ function Winningchef() {
                             <div className="inner wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
                                 <div className="image-layer" style={{ backgroundImage: `url(${twoBg})` }}></div>
 
-                                <div className="image"><img src={bgfive} alt="" /></div>
+                                <div className="image"><img src={awardWinningImg} alt="" /></div>
                             </div>
                         </div>
 

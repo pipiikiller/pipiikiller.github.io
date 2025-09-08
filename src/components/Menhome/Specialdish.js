@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Backgroundoffer from '../../assets/images/lobster/Lobster_33p16x31.75.png';
-import record3 from '../../assets/images/resource/image-3.png'
+import record3 from '../../assets/images/Home Page - AW/H (373 × 358 px).png'
 import recordbg1 from '../../assets/images/background/image-1.jpg'
-import recordbg2 from '../../assets/images/background/bg-4.png'
+import recordbg2 from '../../assets/images/Home Page - AW/H (179 × 361 px).png'
 import recordbg3 from '../../assets/images/resource/badge-2.png'
 
 function Specialdish() {

@@ -1,11 +1,11 @@
 import React from 'react'
-import bg14 from '../../assets/images/background/bg-14.png'
-import bg15 from '../../assets/images/background/bg-15.png'
+import bg14 from '../../assets/images/About Us - AW/About (277 × 282 px).png'
+import bg15 from '../../assets/images/About Us - AW/About (172 × 202 px).png'
 import siconone from '../../assets/images/resource/s-icon-1.png'
 import sicontwo from '../../assets/images/resource/s-icon-2.png'
 import siconthree from '../../assets/images/resource/s-icon-3.png'
 import siconfour from '../../assets/images/resource/s-icon-4.png'
-import service from '../../assets/images/resource/service-image.png'
+import service from '../../assets/images/About Us - AW/About (351 × 465 px).png'
 
 
 function Aboutservice() {

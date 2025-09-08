@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Bgone from '../../../assets/images/background/image-10.jpg'
-import Bgtwo from '../../../assets/images/background/image-11.jpg';
+import Bgone from '../../../assets/images/menus-aw/H (1880 × 1405 px).png'
+import Bgtwo from '../../../assets/images/menus-aw/M (381 × 600 px).png';
 
 function Reservation() {
     return (

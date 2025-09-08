@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedNumber from "animated-number-react"
 import Iframe from 'react-iframe';
-import bgten from '../../assets/images/background/bg-10.png'
-import bgeleven from '../../assets/images/background/bg-11.png'
+import bgten from '../../assets/images/About Us - AW/About (311 × 387 px).png'
+import bgeleven from '../../assets/images/About Us - AW/About (244 × 527 px).png'
 import signatureone from '../../assets/images/resource/signature-1.png'
-import aboutimgone from '../../assets/images/resource/about-image-2.jpg'
-import aboutimgtwo from '../../assets/images/resource/about-image-1.jpg'
+import aboutimgone from '../../assets/images/About Us - AW/About (350 × 554 px).png'
+import aboutimgtwo from '../../assets/images/About Us - AW/About (350 × 197 px).png'
 
 function Aboutsec() {
 

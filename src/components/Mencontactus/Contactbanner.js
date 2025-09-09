@@ -9,7 +9,13 @@ function Contactbanner() {
     return (
         <>
             <div className="contact-map">
-                <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81392.11276571127!2d-74.03116502768826!3d40.70144849986174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1667928043843!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></Iframe>
+                <Iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.3477108833875!2d-0.222606!3d51.548360!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876101188cb0dd5%3A0xf4b5d2d6e3d1b7e0!2sArponnar%2C%2021%20Walm%20Ln%2C%20London%20NW2%205SH!5e0!3m2!1sen!2suk!4v1694272000000!5m2!1sen!2suk"
+                    width="100%"
+                    height="500"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"></Iframe>
             </div>
 
             <section className="contact-page">
@@ -32,8 +38,8 @@ function Contactbanner() {
                                 <div className="contactinfo-block col-lg-4 col-md-4 col-sm-12">
                                     <div className="inner-box cp-seprator wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
                                         <h4>Contact Info</h4>
-                                        <div className="text">Restaurant St, Delici City, London 9578, UK<br />Email : booking@domainname.com</div>
-                                        <div className="more-link"><Link to="#">Booking : +88-123-123456</Link></div>
+                                        <div className="text">21 Walm Ln, London NW2 5SH<br />Email : admin@arponnar.com</div>
+                                        <div className="more-link"><Link to="#">Booking : 020 3478 69106</Link></div>
                                     </div>
                                 </div>
 
@@ -41,7 +47,7 @@ function Contactbanner() {
                                 <div className="contactinfo-block col-lg-4 col-md-4 col-sm-12">
                                     <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
                                         <h4>Dinner Time</h4>
-                                        <div className="text">Monday to Sunday<br />5.30 pm - 11.30 pm</div>
+                                        <div className="text">Monday to Sunday<br />11.00 pm - 10.00 pm</div>
                                     </div>
                                 </div>
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Backgroundimage from '../../assets/images/Home Page - AW/H (1880 × 1405 px).png';
+import Backgroundimage from '../../assets/images/Home Page - AW/H_1880_×_1405_px.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import SwiperCore, { Navigation } from 'swiper/core';

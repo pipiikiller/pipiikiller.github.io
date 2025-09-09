@@ -60,7 +60,7 @@ function Aboutsec() {
                                     <li><strong>Lunch Time</strong>Monday to Sunday <br />11.00 am - 2.30pm</li>
                                     <li><strong>Dinner Time</strong>Monday to Sunday <br />5.30 pm - 11.30 pm</li>
                                     <li className="separator"><span></span></li>
-                                    <li><strong>Contact Us</strong><span className="address">Restaurant St, Delicious City, London 9578, UK</span> <Link to="tel:+88-123-123456">+88-123-123456</Link> <br /><Link to="mailto:reservation@restro.com">reservation@restro.com</Link></li>
+                                    <li><strong>Contact Us</strong><span className="address">21 Walm Ln, London NW2 5SH</span> <Link to="tel:+88-123-123456">+88-123-123456</Link> <br /><Link to="mailto:reservation@restro.com">reservation@restro.com</Link></li>
                                 </ul>
                             </div>
                         </div>

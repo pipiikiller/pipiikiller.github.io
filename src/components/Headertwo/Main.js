@@ -122,13 +122,13 @@ function Main() {
                             <div className="inner clearfix">
                                 <div className="top-left clearfix">
                                     <ul className="top-info clearfix">
-                                        <li><i className="icon far fa-map-marker-alt"></i> Restaurant St, Delicious City, London 9578, UK</li>
+                                        <li><i className="icon far fa-map-marker-alt"></i> 21 Walm Ln, London NW2 5SH</li>
                                         <li><i className="icon far fa-clock"></i> Daily : 8.00 am to 10.00 pm</li>
                                     </ul>
                                 </div>
                                 <div className="top-right clearfix">
                                     <ul className="top-info clearfix">
-                                        <li><Link to="tel:+11234567890"><i className="icon far fa-phone"></i> +1 123 456 7890</Link></li>
+                                        <li><Link to="tel:+11234567890"><i className="icon far fa-phone"></i> 020 3478 6910</Link></li>
                                         <li><Link to="mailto:booking@restaurant.com"><i className="icon far fa-envelope"></i> booking@restaurant.com</Link></li>
                                     </ul>
                                 </div>

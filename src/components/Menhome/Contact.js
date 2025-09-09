@@ -212,7 +212,7 @@ function Contact() {
                                         </div>
                                         <div className="separator"><span></span></div>
                                         <ul className="info">
-                                            <li><strong>Location</strong><br />Restaurant St, Delicious City, London 9578, UK</li>
+                                            <li><strong>Location</strong><br />21 Walm Ln, London NW2 5SH</li>
                                             <li><strong>Lunch Time</strong><br />Monday to Sunday <br />11.00 am - 2.30pm</li>
                                             <li><strong>Dinner Time</strong><br />Monday to Sunday <br />05.00 pm - 10.00pm</li>
                                         </ul>

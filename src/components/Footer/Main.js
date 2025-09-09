@@ -17,10 +17,10 @@ function Main() {
                                         <div className="logo"><Link to="/" title="APONNAR"><img src={logonew} alt="" title="Delici - Restaurants HTML Template" /></Link></div>
                                         <div className="info">
                                             <ul>
-                                                <li>Restaurant St, Delicious City, London 9578, UK</li>
-                                                <li><Link to="mailto:booking@domainname.com">booking@domainname.com</Link></li>
-                                                <li><Link to="tel:+88-123-123456">Booking Request : +88-123-123456</Link></li>
-                                                <li>Open : 09:00 am - 01:00 pm</li>
+                                                <li>21 Walm Ln, London NW2 5SH</li>
+                                                <li><Link to="mailto:booking@domainname.com">admin@arponnar.com</Link></li>
+                                                <li><Link to="tel:020 3478 6910">Booking Request : +020 3478 6910</Link></li>
+                                                <li>Open : 11:00 am - 10:00 pm</li>
                                             </ul>
                                         </div>
                                         <div className="separator"><span></span><span></span><span></span></div>

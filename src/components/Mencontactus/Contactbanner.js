@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Iframe from 'react-iframe'
-import bg25 from '../../assets/images/background/bg-25.png'
-import bg6 from '../../assets/images/background/bg-6.png'
-import restro from '../../assets/images/resource/restaurant.png'
+import bg25 from '../../assets/images/Contact Us - AW/CU_(321 × 371 px).png'
+import bg6 from '../../assets/images/Contact Us - AW/CU_(640 × 417 px).png'
+import restro from '../../assets/images/Contact Us - AW/CU_(526 × 629 px).png'
 
 function Contactbanner() {
     return (

@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import FsLightbox from 'fslightbox-react';
-import galleryone from '../../assets/images/resource/gallery-1.jpg'
-import gallerytwo from '../../assets/images/resource/gallery-2.jpg'
-import gallerythree from '../../assets/images/resource/gallery-3.jpg'
+import galleryone from '../../assets/images/About Us - AW/About (858 × 504 px).png'
+import gallerytwo from '../../assets/images/About Us - AW/About (858 × 504 px).png'
+import gallerythree from '../../assets/images/About Us - AW/About (858 × 504 px).png'
 import SwiperCore, { Navigation } from 'swiper/core';
 
 SwiperCore.use([Navigation]);
@@ -43,7 +43,7 @@ function Sliderabout() {
                 <div className="carousel-box">
                     <Swiper {...options} loop={true} slidesPerView={1.5} centeredSlides={true} spaceBetween={30}
                         grabCursor={true} modules={[]} className="mySwiper">
-                            
+
                         <SwiperSlide className="gallery-block">
                             <div className="image">
                                 <Link to="#" onClick={() => setImg(true)} className="lightbox-image" data-fancybox="gallery">

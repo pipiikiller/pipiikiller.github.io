@@ -6,7 +6,7 @@ import Sliderabout from '../Menabout/Sliderabout'
 import Testimonialsabout from '../Menabout/Testimonialsabout'
 import Winningchef from '../Menabout/Winningchef'
 import Bredcrumb from '../Bredcrumb/Main'
-import Img from '../../assets/images/background/banner-image-1.jpg'
+import Img from '../../assets/images/Contact Us - AW/CU_1880_600_px.png'
 
 function Main() {
   return (

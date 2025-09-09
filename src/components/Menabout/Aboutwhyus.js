@@ -1,12 +1,12 @@
 import React from "react";
-import One from '../../assets/images/resource/featured-4.jpg'
-import Two from '../../assets/images/resource/featured-5.jpg'
-import Three from '../../assets/images/resource/featured-6.jpg'
-import Four from '../../assets/images/resource/featured-7.jpg'
-import Iconone from '../../assets/images/resource/why-icon-1.png'
-import Icontwo from '../../assets/images/resource/why-icon-2.png'
-import Iconthree from '../../assets/images/resource/why-icon-3.png'
-import Iconfour from '../../assets/images/resource/why-icon-4.png'
+import One from '../../assets/images/About Us - AW/About (255 × 453 px).png'
+import Two from '../../assets/images/About Us - AW/About (255 × 453 px).png'
+import Three from '../../assets/images/About Us - AW/About (255 × 453 px).png'
+import Four from '../../assets/images/About Us - AW/About (255 × 453 px).png'
+import Iconone from '../../assets/images/About Us - AW/About (100 × 80 px).png'
+import Icontwo from '../../assets/images/About Us - AW/About (100 × 80 px).png'
+import Iconthree from '../../assets/images/About Us - AW/About (100 × 80 px).png'
+import Iconfour from '../../assets/images/About Us - AW/About (100 × 80 px).png'
 
 function Aboutwhyus() {
 

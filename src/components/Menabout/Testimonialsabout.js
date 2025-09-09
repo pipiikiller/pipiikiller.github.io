@@ -1,12 +1,12 @@
 import React from 'react';
-import Backgroundimage from '../../assets/images/background/image-7.jpg';
+import Backgroundimage from '../../assets/images/Home Page - AW/H (1880 × 1405 px).png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import SwiperCore, { Navigation } from 'swiper/core';
 import quotesone from '../../assets/images/icons/quotes-1.png';
-import authorthumb from '../../assets/images/resource/author-thumb-4.jpg';
-import authorthumbone from '../../assets/images/resource/author-thumb-5.jpg';
-import authorthumbtwo from '../../assets/images/resource/author-thumb-6.jpg';
+import authorthumb from '../../assets/images/About Us - AW/About (100 × 80 px).png';
+import authorthumbone from '../../assets/images/About Us - AW/About (100 × 80 px).png';
+import authorthumbtwo from '../../assets/images/About Us - AW/About (100 × 80 px).png';
 
 SwiperCore.use([Navigation]);
 

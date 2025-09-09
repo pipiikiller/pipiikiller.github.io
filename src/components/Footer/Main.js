@@ -1,5 +1,5 @@
 import React from 'react';
-import Backgroundimage from '../../assets/images/background/image-4.jpg';
+import Backgroundimage from '../../assets/images/Contact Us - AW/CU_1880_×_919_px.png';
 import { Link } from 'react-router-dom'
 import logonew from '../../assets/images/logo.png'
 

@@ -6,7 +6,7 @@ import Img from '../../assets/images/background/banner-image-3.jpg'
 function Main() {
   return (
     <>
-      <Bredcom subtitle="Reservation" title="BOOK YOUR TABLE" Img={Img}/>  
+      <Bredcom subtitle="Reservation" title="BOOK YOUR TABLE" Img={Img}/>
       <Book />
     </>
   )

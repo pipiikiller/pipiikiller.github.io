@@ -70,14 +70,14 @@ function Story() {
                 data-wow-delay="0ms"
               >
                 <div className="round-stamp">
-                  <img src={badge1} alt="" />
+                  {/* <img src={badge1} alt="" /> */}
                 </div>
                 <div className="images parallax-scene-1">
                   <div className="image" data-depth="0.15">
                     <img src={img1} alt="" />
                   </div>
                   <div className="image" data-depth="0.30">
-                    <img src={img2} alt="" />
+                    {/* <img src={img2} alt="" /> */}
                   </div>
                 </div>
               </div>

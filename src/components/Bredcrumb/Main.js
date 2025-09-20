@@ -5,6 +5,7 @@ function Main({ subtitle, Img, title }) {
     <>
       <section className="inner-banner">
         <div className="image-layer img-fluid" style={{ backgroundImage: `url(${Img})` }}></div>
+        {/* <div className="image-layer img-fluid"></div> */}
         <div className="auto-container">
           <div className="inner">
             <div className="subtitle"><span> {title} </span></div>

@@ -17,7 +17,7 @@ function Main() {
       <Aboutservice />
       <Testimonialsabout />
       <Aboutwhyus />
-      <Sliderabout />
+      {/* <Sliderabout /> */}
     </>
   )
 }

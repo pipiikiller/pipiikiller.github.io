@@ -38,7 +38,8 @@ function Testimonialsabout() {
 
   return (
     <section className="testimonials-two">
-      <div className="image-layer" style={{ backgroundImage: `url(${Backgroundimage})` }}></div>
+      {/* <div className="image-layer" style={{ backgroundImage: `url(${Backgroundimage})` }}></div> */}
+          <div className="image-layer"></div>
       <div className="auto-container">
         <div className="title-box centered">
           <div className="subtitle">

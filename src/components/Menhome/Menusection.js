@@ -16,11 +16,11 @@ function Menusection() {
     <>
       <section className="menu-section">
         <div className="left-bg">
-          <img src={bgone} alt="" title="" />
+          {/* <img src={bgone} alt="" title="" /> */}
         </div>
 
         <div className="right-bg">
-          <img src={Bgtwo} alt="" title="" />
+          {/* <img src={Bgtwo} alt="" title="" /> */}
         </div>
 
         <div className="auto-container">

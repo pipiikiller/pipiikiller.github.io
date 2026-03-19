@@ -76,8 +76,6 @@ function Main() {
                                     <li><Link to="/menufour" onClick={() => setActive(false)}>Dine in Menu</Link></li>
                                 </ul>
                             </li>
-                            <li><Link to="/about" onClick={() => setActive(false)}>About Us</Link></li>
-                            {/* <li><Link to="/ourchefs" onClick={() => setActive(false)}>Our chefs</Link></li> */}
                             {/* <li className="dropdown"><Link to="/" onClick={() => setPage(page === true ? false : true)}>Pages<button type="button" className="btn-expander"><i className="far fa-angle-down"></i></button></Link>
                                 <ul style={{ display: page ? "block" : "none" }}>
                                     <li><Link to="/menuone" onClick={() => setActive(false)}>Dropdown Menu 1</Link></li>
@@ -103,14 +101,14 @@ function Main() {
 
                     <h2>Visit Us</h2>
                     <ul className="info">
-                        <li>Restaurant St, Delicious City, <br /> London 9578, UK </li>
-                        <li>Open: 9.30 am - 2.30pm</li>
-                        <li><Link to="mailto:booking@domainame.com">booking@domainame.com</Link></li>
+                        <li>21 Walm Ln, London NW2 5SH</li>
+                        <li>Mon/Wed-Fri: 1-10pm | Tue: 6-10pm | Sat-Sun: 11am-10pm</li>
+                        <li><Link to="mailto:admin@arponnar.com">admin@arponnar.com</Link></li>
                     </ul>
                     <div className="separator"><span></span></div>
                     <div className="booking-info">
                         <div className="bk-title">Booking request</div>
-                        <div className="bk-no"><Link to="tel:+88-123-123456">+88-123-123456</Link></div>
+                        <div className="bk-no"><Link to="tel:+447576607122">+44 7576 607122</Link></div>
                     </div>
 
                 </div>
@@ -123,13 +121,13 @@ function Main() {
                                 <div className="top-left clearfix">
                                     <ul className="top-info clearfix">
                                         <li><i className="icon far fa-map-marker-alt"></i> 21 Walm Ln, London NW2 5SH</li>
-                                        <li><i className="icon far fa-clock"></i> Daily : 8.00 am to 10.00 pm</li>
+                                        <li><i className="icon far fa-clock"></i> Mon/Wed-Fri: 1-10pm | Tue: 6-10pm | Sat-Sun: 11am-10pm</li>
                                     </ul>
                                 </div>
                                 <div className="top-right clearfix">
                                     <ul className="top-info clearfix">
-                                        <li><Link to="tel:+11234567890"><i className="icon far fa-phone"></i> 020 3478 6910 </Link> </li>
-                                        <li><Link to="mailto:booking@restaurant.com"><i className="icon far fa-envelope"></i> admin@arponnar.com</Link></li>
+                                        <li><Link to="tel:+447576607122"><i className="icon far fa-phone"></i> +44 7576 607122 </Link> </li>
+                                        <li><Link to="mailto:admin@arponnar.com"><i className="icon far fa-envelope"></i> admin@arponnar.com</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -198,8 +196,6 @@ function Main() {
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li><Link to="/about">About Us</Link></li>
-                                                <li><Link to="/ourchefs">Our chefs</Link></li>
                                                 <li className="dropdown"><Link to="/">Pages</Link>
                                                     <ul>
                                                         <li> <Link to="#">Dropdown Menu 1</Link></li>

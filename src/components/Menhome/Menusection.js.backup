@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import ClassicMenu from "../../assets/food_menus/Classic_Menu.jpeg";
-import TraditionalMenu from "../../assets/food_menus/Traditional_house_dishes.jpeg";
-import SaladsMenu from "../../assets/food_menus/Salads.jpeg";
-import HeritageMenu from "../../assets/food_menus/Heritage_Menu.jpeg";
-import DrinksDessertsMenu from "../../assets/food_menus/drinks_desserts.jpeg";
 
 function Menusection() {
   const [tabMenu, tabActive] = useState({ a: true });
@@ -84,11 +79,6 @@ function Menusection() {
             </div>
             <div className="tabs-content">
               <div className={`tab ${tabMenu.a && "active-tab"}`} id="tab-1">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={ClassicMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Classics Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -250,11 +240,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.b && "active-tab"}`} id="tab-2">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={TraditionalMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Traditional House Dishes Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -271,246 +256,6 @@ function Menusection() {
                             <div className="price">
                               <span>£16.50</span>
                             </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Chicken Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£15.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">Pork Curry</Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£16.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Prawn Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£17.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Duck Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£17.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Lamb Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£16.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Goat Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£16.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="menu-col col-lg-6 col-md-12 col-sm-12">
-                    <div className="inner">
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Fish Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£16.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Aubergine Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£13.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Potato Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£13.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Chickpea Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£13.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Traditional Lentil Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£13.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Slow-braised Pork Trotter Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£17.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className={`tab ${tabMenu.c && "active-tab"}`} id="tab-3">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={SaladsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Salads Menu</span>
-                  </a>
-                </div>
-                <div className="row clearfix">
-                  <div className="menu-col col-lg-6 col-md-12 col-sm-12">
-                    <div className="inner">
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">La-Phet Thoke</Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£8.50</span>
-                            </div>
-                          </div>
-                          <div className="text desc">
-                            <Link to="#">
-                              Earthy pickled tea leaves mixed with dried prawns
-                              and double-fried legumes for a lively contrast of
-                              textures and flavours
-                            </Link>
                           </div>
                         </div>
                       </div>
@@ -561,7 +306,6 @@ function Menusection() {
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
                           <div className="title clearfix">
@@ -658,7 +402,6 @@ function Menusection() {
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
                           <div className="title clearfix">
@@ -685,12 +428,168 @@ function Menusection() {
                 </div>
               </div>
 
-              <div className={`tab ${tabMenu.d && "active-tab"}`} id="tab-4">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={HeritageMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Heritage Sets Menu</span>
-                  </a>
+              <div className={`tab ${tabMenu.c && "active-tab"}`} id="tab-3">
+                <div className="row clearfix">
+                  <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                    <div className="inner">
+                      <div className="dish-block">
+                        <div className="inner-box">
+                          <div className="title clearfix">
+                            <div className="ttl clearfix">
+                              <h5>
+                                <Link to="#">Mont-Hinn-Ngar</Link>
+                              </h5>
+                            </div>
+                            <div className="price">
+                              <span>£10.50</span>
+                            </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              A traditional Burmese rice-noodle soup with a
+                              savoury, aromatic fish-based broth, featuring a
+                              variety of garnishes
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="dish-block">
+                        <div className="inner-box">
+                          <div className="title clearfix">
+                            <div className="ttl clearfix">
+                              <h5>
+                                <Link to="#">
+                                  Ohn-No-Khauk-Swel{" "}
+                                  {/* <span className="s-info">SEASONAL</span> */}
+                                </Link>
+                              </h5>
+                            </div>
+                            <div className="price">
+                              <span>£10.50</span>
+                            </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              A Burmese style egg-noodle soup known for its
+                              rich, creamy coconut broth with succulent bites of
+                              chicken
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="dish-block">
+                        <div className="inner-box">
+                          <div className="title clearfix">
+                            <div className="ttl clearfix">
+                              <h5>
+                                <Link to="#">Nan-Gyi-Thoke</Link>
+                              </h5>
+                            </div>
+                            <div className="price">
+                              <span>£9.50</span>
+                            </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Thick noodles tossed with chickpea powder and
+                              shredded sautéed chicken, topped with fresh herbs
+                              and boiled egg
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="menu-col col-lg-6 col-md-12 col-sm-12">
+                    <div className="inner">
+                      <div className="dish-block">
+                        <div className="inner-box">
+                          <div className="title clearfix">
+                            <div className="ttl clearfix">
+                              <h5>
+                                <Link to="#">
+                                  Nan-Pyar-Thoke{" "}
+                                  {/* <span className="s-info">NEW</span> */}
+                                </Link>
+                              </h5>
+                            </div>
+                            <div className="price">
+                              <span>£9.50</span>
+                            </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Akin to Nan-Gyi-Thoke, this dish features thick
+                              flat noodles tossed in chickpea powder and
+                              shredded sautéed chicken, topped with fresh herbs,
+                              and boiled egg, with the flat noodles adding a
+                              unique twist
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="dish-block">
+                        <div className="inner-box">
+                          <div className="title clearfix">
+                            <div className="ttl clearfix">
+                              <h5>
+                                <Link to="#">Shan-Khauk-Swel</Link>
+                              </h5>
+                            </div>
+                            <div className="price">
+                              <span>£9.50</span>
+                            </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Essence of Shan cuisine (Northeastern Burma),
+                              featuring rice noodles served in a savoury sauce
+                              of soybeans and spices, combined with diced
+                              sautéed chicken and pickled vegetables
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="dish-block">
+                        <div className="inner-box">
+                          <div className="title clearfix">
+                            <div className="ttl clearfix">
+                              <h5>
+                                <Link to="#">
+                                  Kyay-Oh{" "}
+                                  <span className="s-info">
+                                    (Dry/Soup) (Pork/Chicken)
+                                  </span>
+                                </Link>
+                              </h5>
+                            </div>
+                            <div className="price">
+                              <span>£12.50</span>
+                            </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              A versatile vermicelli bowl served as either a
+                              soup, or dry with the cloudy broth served
+                              separately. Enriched with chicken or pork
+                              meatballs, it’s ideal for those preferring gentle
+                              flavours over spicy or bold tastes. **If you
+                              prefer not to have offal, please kindly request
+                              its exclusion when ordering**
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div className={`tab ${tabMenu.d && "active-tab"}`} id="tab-4">
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -775,11 +674,6 @@ function Menusection() {
                 </div>
               </div>
               <div className={`tab ${tabMenu.e && "active-tab"}`} id="tab-5">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={TraditionalMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Menu (Wok Kissed Greens)</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -903,11 +797,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.f && "active-tab"}`} id="tab-6">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={DrinksDessertsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Drinks & Desserts Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -1227,11 +1116,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.g && "active-tab"}`} id="tab-7">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={DrinksDessertsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Drinks & Desserts Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">

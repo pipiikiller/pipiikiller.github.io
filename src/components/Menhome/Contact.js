@@ -6,6 +6,7 @@ import author1 from '../../assets/images/resource/author-thumb-1.jpg'
 import author2 from '../../assets/images/resource/author-thumb-2.jpg'
 import author3 from '../../assets/images/resource/author-thumb-3.jpg'
 import SwiperCore, { Controller } from 'swiper';
+import { sendReservationEmail } from '../../services/emailService';
 
 SwiperCore.use([Controller]);
 function Contact() {
@@ -14,6 +15,15 @@ function Contact() {
     const swiper2 = useRef(null);
 
     const [flag, setflag] = useState(false)
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        guests: '1 Person',
+        date: '',
+        time: '08 : 00 am',
+        message: ''
+    });
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
 
     const slider2 = useRef()
     const duration = 500;
@@ -26,6 +36,41 @@ function Contact() {
             setflag(false)
         }
     }
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSubmitStatus({ type: '', message: '' });
+
+        try {
+            await sendReservationEmail(formData);
+            setSubmitStatus({
+                type: 'success',
+                message: 'Reservation request sent successfully! We will contact you shortly.'
+            });
+            // Reset form
+            setFormData({
+                name: '',
+                phone: '',
+                guests: '1 Person',
+                date: '',
+                time: '08 : 00 am',
+                message: ''
+            });
+        } catch (error) {
+            setSubmitStatus({
+                type: 'error',
+                message: 'Failed to send reservation. Please call us at +44 7576 607122'
+            });
+        }
+    };
 
     return (
         <>
@@ -118,25 +163,56 @@ function Contact() {
                                 <div className="inner">
                                     <div className="title">
                                         <h2>Online Reservation</h2>
-                                        <div className="request-info">Booking request <Link to="#">+88-123-123456</Link> or fill out the order form</div>
+                                        <div className="request-info">Booking request <Link to="#">+44 7576 607122</Link> or fill out the order form</div>
                                     </div>
                                     <div className="default-form reservation-form">
-                                        <form method="post" action="/">
+                                        {submitStatus.message && (
+                                            <div style={{
+                                                padding: '15px',
+                                                marginBottom: '20px',
+                                                borderRadius: '4px',
+                                                backgroundColor: submitStatus.type === 'success' ? '#d4edda' : '#f8d7da',
+                                                color: submitStatus.type === 'success' ? '#155724' : '#721c24',
+                                                border: `1px solid ${submitStatus.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+                                            }}>
+                                                {submitStatus.message}
+                                            </div>
+                                        )}
+                                        <form onSubmit={handleSubmit}>
                                             <div className="row clearfix">
                                                 <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                                     <div className="field-inner">
-                                                        <input type="text" name="fieldname" placeholder="Your Name" required />
+                                                        <input
+                                                            type="text"
+                                                            name="name"
+                                                            value={formData.name}
+                                                            onChange={handleInputChange}
+                                                            placeholder="Your Name"
+                                                            required
+                                                        />
                                                     </div>
                                                 </div>
                                                 <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                                     <div className="field-inner">
-                                                        <input type="text" name="fieldname" placeholder="Phone Number" required />
+                                                        <input
+                                                            type="text"
+                                                            name="phone"
+                                                            value={formData.phone}
+                                                            onChange={handleInputChange}
+                                                            placeholder="Phone Number"
+                                                            required
+                                                        />
                                                     </div>
                                                 </div>
                                                 <div className="form-group col-lg-4 col-md-6 col-sm-12">
                                                     <div className="field-inner">
                                                         <span className="alt-icon far fa-user"></span>
-                                                        <select className="l-icon">
+                                                        <select
+                                                            className="l-icon"
+                                                            name="guests"
+                                                            value={formData.guests}
+                                                            onChange={handleInputChange}
+                                                        >
                                                             <option>1 Person</option>
                                                             <option>2 Person</option>
                                                             <option>3 Person</option>
@@ -151,14 +227,27 @@ function Contact() {
                                                 <div className="form-group col-lg-4 col-md-6 col-sm-12">
                                                     <div className="field-inner">
                                                         <span className="alt-icon far fa-calendar"></span>
-                                                        <input className="l-icon datepicker" type="text" name="fieldname" placeholder="DD-MM-YYYY" required readOnly />
+                                                        <input
+                                                            className="l-icon datepicker"
+                                                            type="date"
+                                                            name="date"
+                                                            value={formData.date}
+                                                            onChange={handleInputChange}
+                                                            placeholder="DD-MM-YYYY"
+                                                            required
+                                                        />
                                                         <span className="arrow-icon far fa-angle-down"></span>
                                                     </div>
                                                 </div>
                                                 <div className="form-group col-lg-4 col-md-12 col-sm-12">
                                                     <div className="field-inner">
                                                         <span className="alt-icon far fa-clock"></span>
-                                                        <select className="l-icon">
+                                                        <select
+                                                            className="l-icon"
+                                                            name="time"
+                                                            value={formData.time}
+                                                            onChange={handleInputChange}
+                                                        >
                                                             <option>08 : 00 am</option>
                                                             <option>09 : 00 am</option>
                                                             <option>10 : 00 am</option>
@@ -180,7 +269,12 @@ function Contact() {
                                                 </div>
                                                 <div className="form-group col-lg-12 col-md-12 col-sm-12">
                                                     <div className="field-inner">
-                                                        <textarea name="fieldname" placeholder="Message" required></textarea>
+                                                        <textarea
+                                                            name="message"
+                                                            value={formData.message}
+                                                            onChange={handleInputChange}
+                                                            placeholder="Message"
+                                                        ></textarea>
                                                     </div>
                                                 </div>
                                                 <div className="form-group col-lg-12 col-md-12 col-sm-12">
@@ -208,13 +302,20 @@ function Contact() {
                                     <div className="data">
                                         <div className="booking-info">
                                             <div className="bk-title">Booking request</div>
-                                            <div className="bk-no"><Link to="tel:+88-123-123456">+88-123-123456</Link></div>
+                                            <div className="bk-no"><Link to="tel:+447576607122">+44 7576 607122</Link></div>
                                         </div>
                                         <div className="separator"><span></span></div>
                                         <ul className="info">
                                             <li><strong>Location</strong><br />21 Walm Ln, London NW2 5SH</li>
-                                            <li><strong>Lunch Time</strong><br />Monday to Sunday <br />11.00 am - 2.30pm</li>
-                                            <li><strong>Dinner Time</strong><br />Monday to Sunday <br />05.00 pm - 10.00pm</li>
+                                            <li><strong>Opening Hours</strong><br />
+                                                Monday: 1:00 pm - 10:00 pm<br />
+                                                Tuesday: 6:00 pm - 10:00 pm<br />
+                                                Wednesday: 1:00 pm - 10:00 pm<br />
+                                                Thursday: 1:00 pm - 10:00 pm<br />
+                                                Friday: 1:00 pm - 10:00 pm<br />
+                                                Saturday: 11:00 am - 10:00 pm<br />
+                                                Sunday: 11:00 am - 10:00 pm
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>

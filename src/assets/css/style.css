@@ -1962,6 +1962,10 @@ body.visible-sidebar{
   margin-top: -95px;
 }
 
+.story-section .left-bg img{
+  filter: brightness(0.4);
+}
+
 .story-section .text-col{
   position: relative;
   margin-bottom: var(--margin-bottom-40);
@@ -2067,6 +2071,7 @@ body.visible-sidebar{
   display: block;
   width: 100%;
   z-index: 1;
+  /* filter: brightness(0.6); */
 }
 
 .story-section .image-col .images .image:nth-child(2){

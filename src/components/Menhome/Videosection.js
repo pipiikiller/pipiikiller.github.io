@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Imgtwo from '../../assets/images/watch_our_videos/Watch_Our_Video66p32x32p74.png';
 import { Link } from 'react-router-dom';
-import AnimatedNumber from 'animated-number-react';
 import Iframe from 'react-iframe';
 
 function Videosection() {
@@ -31,46 +30,7 @@ function Videosection() {
                             </Link>
                         </div>
                         <div className="separator"><span></span><span></span><span></span></div>
-                        <h3>A modern restaurant with a menu that will make your mouth water.</h3>
-                        <div className="auth-title">Willium Joe - Master chef</div>
-                    </div>
-
-                    <div className="fact-counter">
-                        <div className="row clearfix">
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={150} duration={2000} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">daily <br />order</div>
-
-                                </div>
-                            </div>
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={82} duration={1500} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">Special <br />Dishes</div>
-                                </div>
-                            </div>
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={35} duration={1000} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">expert <br />chef</div>
-                                </div>
-                            </div>
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={10} duration={1000} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">awards <br />won</div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3>Authentic Burmese cuisine crafted with traditional flavours and time-honoured recipes.</h3>
                     </div>
                 </div>
 

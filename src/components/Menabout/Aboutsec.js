@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import AnimatedNumber from "animated-number-react"
 import Iframe from 'react-iframe';
 import bgten from '../../assets/images/About Us - AW/About (311 × 387 px).png'
 import bgeleven from '../../assets/images/About Us - AW/About (244 × 527 px).png'
@@ -25,7 +24,7 @@ function Aboutsec() {
                             <img src={require('../../assets/images/icons/separator.svg').default} alt='mySvgImage' />
                         </div>
 
-                        <h3>A modern restaurant with a menu that will make your mouth water. Servicing delicious food <span className="theme_color">since 45 years</span>. Enjoy our seasonal menu and experience the beauty of naturalness</h3>
+                        <h3>Authentic Burmese cuisine crafted with traditional flavours and time-honoured recipes. Enjoy our seasonal menu and experience the beauty of naturalness</h3>
                     </div>
                     <div className="row clearfix">
 
@@ -57,50 +56,21 @@ function Aboutsec() {
                         <div className="about-block info-block col-xl-4 col-lg-4 col-md-12 col-sm-12">
                             <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
                                 <ul className="info">
-                                    <li><strong>Lunch Time</strong>Monday to Sunday <br />11.00 am - 2.30pm</li>
-                                    <li><strong>Dinner Time</strong>Monday to Sunday <br />5.30 pm - 11.30 pm</li>
+                                    <li><strong>Opening Hours</strong>
+                                        Monday: 1:00 pm - 10:00 pm<br />
+                                        Tuesday: 6:00 pm - 10:00 pm<br />
+                                        Wednesday: 1:00 pm - 10:00 pm<br />
+                                        Thursday: 1:00 pm - 10:00 pm<br />
+                                        Friday: 1:00 pm - 10:00 pm<br />
+                                        Saturday: 11:00 am - 10:00 pm<br />
+                                        Sunday: 11:00 am - 10:00 pm
+                                    </li>
                                     <li className="separator"><span></span></li>
-                                    <li><strong>Contact Us</strong><span className="address">21 Walm Ln, London NW2 5SH</span> <Link to="tel:+88-123-123456">+88-123-123456</Link> <br /><Link to="mailto:reservation@restro.com">reservation@restro.com</Link></li>
+                                    <li><strong>Contact Us</strong><span className="address">21 Walm Ln, London NW2 5SH</span> <Link to="tel:+447576607122">+44 7576 607122</Link> <br /><Link to="mailto:admin@arponnar.com">admin@arponnar.com</Link></li>
                                 </ul>
                             </div>
                         </div>
 
-                    </div>
-                    <div className="fact-counter">
-                        <div className="row clearfix">
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={150} duration={2000} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">daily order</div>
-                                </div>
-                            </div>
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={82} duration={1500} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">Special Dishes</div>
-                                </div>
-                            </div>
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={35} duration={1000} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">expert chef</div>
-                                </div>
-                            </div>
-                            <div className="fact-block col-lg-3 col-md-6 col-sm-12">
-                                <div className="inner clearfix">
-                                    <div className="fact-count"><div className="count-box">
-                                        <AnimatedNumber className="count-text" value={10} duration={1000} formatValue={(v) => Math.round(v)} />
-                                        <i>+</i></div></div>
-                                    <div className="fact-title">awards won</div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
 

@@ -18,29 +18,10 @@ function Main() {
                                         <div className="info">
                                             <ul>
                                                 <li>21 Walm Ln, London NW2 5SH</li>
-                                                <li><Link to="mailto:booking@domainname.com">admin@arponnar.com</Link></li>
-                                                <li><Link to="tel:020 3478 6910">Booking Request : +020 3478 6910</Link></li>
-                                                <li>Open : 11:00 am - 10:00 pm</li>
+                                                <li><Link to="mailto:admin@arponnar.com">admin@arponnar.com</Link></li>
+                                                <li><Link to="tel:+447576607122">Booking Request : +44 7576 607122</Link></li>
+                                                <li>Mon/Wed-Fri: 1-10pm | Tue: 6-10pm | Sat-Sun: 11am-10pm</li>
                                             </ul>
-                                        </div>
-                                        <div className="separator"><span></span><span></span><span></span></div>
-                                        <div className="newsletter">
-                                            <h3>Get News & Offers</h3>
-                                            <div className="text">Subscribe us & Get <span>25% Off.</span></div>
-                                            <div className="newsletter-form">
-                                                <form method="post" action="/">
-                                                    <div className="form-group">
-                                                        <span className="alt-icon far fa-envelope"></span>
-                                                        <input type="email" name="email" placeholder="Your email" required />
-                                                        <button type="submit" className="theme-btn btn-style-one clearfix">
-                                                            <span className="btn-wrap">
-                                                                <span className="text-one">subscribe</span>
-                                                                <span className="text-two">subscribe</span>
-                                                            </span>
-                                                        </button>
-                                                    </div>
-                                                </form>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -51,8 +32,6 @@ function Main() {
                                     <ul className="links">
                                         <li> <Link to="/">Home</Link></li>
                                         <li> <Link to="/menu">Menus</Link></li>
-                                        <li> <Link to="/about">About us</Link></li>
-                                        <li> <Link to="/ourchefs">Our chefs</Link></li>
                                         <li> <Link to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>
@@ -75,7 +54,7 @@ function Main() {
 
                 <div className="footer-bottom">
                     <div className="auto-container">
-                        <div className="copyright">&copy; 2022 Restaurt. All Rights Reserved   |    Crafted by <Link to="https://themeforest.net/user/kalanidhithemes" target="blank">Kalanidhi Themes</Link></div>
+                        <div className="copyright">&copy; 2025 Arponnar. All Rights Reserved</div>
                     </div>
                 </div>
 

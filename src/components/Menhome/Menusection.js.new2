@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import ClassicMenu from "../../assets/food_menus/Classic_Menu.jpeg";
-import TraditionalMenu from "../../assets/food_menus/Traditional_house_dishes.jpeg";
-import SaladsMenu from "../../assets/food_menus/Salads.jpeg";
-import HeritageMenu from "../../assets/food_menus/Heritage_Menu.jpeg";
-import DrinksDessertsMenu from "../../assets/food_menus/drinks_desserts.jpeg";
 
 function Menusection() {
   const [tabMenu, tabActive] = useState({ a: true });
@@ -84,11 +79,6 @@ function Menusection() {
             </div>
             <div className="tabs-content">
               <div className={`tab ${tabMenu.a && "active-tab"}`} id="tab-1">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={ClassicMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Classics Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -249,128 +239,121 @@ function Menusection() {
                 </div>
               </div>
 
+
               <div className={`tab ${tabMenu.b && "active-tab"}`} id="tab-2">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={TraditionalMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Traditional House Dishes Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={five} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Beef Curry
+                                  Mingalar Zay Stuffed Fishcake
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£16.50</span>
+                              <span>$25.50</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Zesty vegetables sandwiched in springy fried
+                              featherback fishcake
+                            </Link>
                           </div>
                         </div>
                       </div>
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={six} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Chicken Curry
+                                  Signature Shan Fried Tofu{" "}
+                                  <span className="s-info">
+                                    Shan-Toh-Huu-Kyaw
+                                  </span>
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£15.50</span>
+                              <span>$40.00</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Chickpea fritters with a golden crisp on the
+                              exterior and a tender tofu-like interior
+                            </Link>
                           </div>
                         </div>
                       </div>
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={seven} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
-                                <Link to="#">Pork Curry</Link>
+                                <Link to="#">Spring Roll</Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£16.50</span>
+                              <span>$10.00</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Classic snack we all know and love
+                            </Link>
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={seven} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Prawn Curry
+                                  Slow-braised Pork Trotter Soup{" "}
+                                  <span className="s-info">
+                                    Wat-Cha-Douk-Soup-Pyote
+                                  </span>
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£17.50</span>
+                              <span>$10.00</span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Duck Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£17.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Lamb Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£16.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Goat Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£16.50</span>
-                            </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Melt-in-your-mouth tender pork trotters in a rich
+                              savoury broth
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -380,102 +363,120 @@ function Menusection() {
                     <div className="inner">
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={eight} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Fish Curry
+                                  Fritter Platter{" "}
+                                  {/* <span className="s-info">NEW</span> */}
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£16.50</span>
+                              <span>$39.00</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Assortment of traditional Burmese fritters, a
+                              perfect choice for sampling
+                            </Link>
                           </div>
                         </div>
                       </div>
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={nine} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Aubergine Curry
+                                  Golden Sticky Rice{" "}
+                                  <span className="s-info">Si-Hta-Min</span>
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£13.50</span>
+                              <span>$25.00</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              A match made in heaven with tender yellow peas and
+                              sautéed onion garnish
+                            </Link>
                           </div>
                         </div>
                       </div>
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={ten} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Potato Curry
+                                  Pel Paratha{" "}
+                                  <span className="s-info">
+                                    Mashed Peas/Plain
+                                  </span>
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£13.50</span>
+                              <span>$49.00</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Experience Paratha like locals, with seasoned
+                              mashed yellow peas or enjoy it plain with a side
+                              of sugar
+                            </Link>
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={ten} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Chickpea Curry
+                                  Scott Market Wat-Thar-Dote-Htoe{" "}
+                                  {/* <span className="s-info">Mashed Peas/Plain</span> */}
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£13.50</span>
+                              <span>$49.00</span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Traditional Lentil Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£13.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Slow-braised Pork Trotter Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£17.50</span>
-                            </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Tender braised pork offal skewers served in a
+                              luxurious steel broth pot with a flame,
+                              accompanied by a chili and garlic dip for an
+                              indulgent experience
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -484,17 +485,18 @@ function Menusection() {
                 </div>
               </div>
 
+
               <div className={`tab ${tabMenu.c && "active-tab"}`} id="tab-3">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={SaladsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Salads Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={five} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
@@ -502,7 +504,7 @@ function Menusection() {
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£8.50</span>
+                              <span>$25.50</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -517,6 +519,11 @@ function Menusection() {
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={six} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
@@ -527,7 +534,7 @@ function Menusection() {
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£8.50</span>
+                              <span>$40.00</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -542,6 +549,11 @@ function Menusection() {
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={seven} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
@@ -549,7 +561,7 @@ function Menusection() {
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£6.50</span>
+                              <span>$10.00</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -561,9 +573,13 @@ function Menusection() {
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={seven} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
@@ -571,7 +587,7 @@ function Menusection() {
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£6.50</span>
+                              <span>$10.00</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -592,17 +608,22 @@ function Menusection() {
                     <div className="inner">
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={eight} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
                                 <Link to="#">
-                                  Say-Bal-Ou-Thoke{" "}
+                                  Say-Bel-Ou Thoke{" "}
                                   {/* <span className="s-info">NEW</span> */}
                                 </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£9.50</span>
+                              <span>$39.00</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -616,14 +637,19 @@ function Menusection() {
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={nine} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
-                                <Link to="#">Pazun-Chin-Thoke</Link>
+                                <Link to="#">Pazun-Chin Thoke</Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£10.50</span>
+                              <span>$25.00</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -638,14 +664,19 @@ function Menusection() {
 
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={ten} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
-                                <Link to="#">Nga-Phel-Chin-Thoke</Link>
+                                <Link to="#">Nga-Phel-Chin Thoke</Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£10.50</span>
+                              <span>$49.00</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -658,17 +689,21 @@ function Menusection() {
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
+                          <div className="dish-image">
+                            <Link to="#">
+                              <img src={ten} alt="" />
+                            </Link>
+                          </div>
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
-                                <Link to="#">Myinn-Khwar-Ywat-Thoke</Link>
+                                <Link to="#">Myinn-Khwar-Ywat Thoke</Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£7.50</span>
+                              <span>$49.00</span>
                             </div>
                           </div>
                           <div className="text desc">
@@ -686,11 +721,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.d && "active-tab"}`} id="tab-4">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={HeritageMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Heritage Sets Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -775,11 +805,6 @@ function Menusection() {
                 </div>
               </div>
               <div className={`tab ${tabMenu.e && "active-tab"}`} id="tab-5">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={TraditionalMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Menu (Wok Kissed Greens)</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -903,11 +928,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.f && "active-tab"}`} id="tab-6">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={DrinksDessertsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Drinks & Desserts Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -1227,11 +1247,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.g && "active-tab"}`} id="tab-7">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={DrinksDessertsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Drinks & Desserts Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">

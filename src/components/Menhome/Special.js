@@ -136,14 +136,6 @@ function Special() {
             <div className="swiper-button-next">
               <span className="fal fa-angle-right"></span>
             </div>
-            <div className="lower-link-box text-center">
-              <Link to="#" className="theme-btn btn-style-two clearfix">
-                <span className="btn-wrap">
-                  <span className="text-one">view all menu</span>
-                  <span className="text-two">view all menu</span>
-                </span>
-              </Link>
-            </div>
           </div>
         </div>
       </section >

@@ -1,8 +1,52 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Backgroundimage from '../../../assets/images/background/image-9.jpg';
 import { Link } from 'react-router-dom'
+import { sendReservationEmail } from '../../../services/emailService';
 
 function Secreservation() {
+    const [formData, setFormData] = useState({
+        name: '',
+        phone: '',
+        guests: '1 Person',
+        date: '',
+        time: '08 : 00 am'
+    });
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setSubmitStatus({ type: '', message: '' });
+
+        try {
+            await sendReservationEmail(formData);
+            setSubmitStatus({
+                type: 'success',
+                message: 'Reservation request sent successfully! We will contact you shortly.'
+            });
+            // Reset form
+            setFormData({
+                name: '',
+                phone: '',
+                guests: '1 Person',
+                date: '',
+                time: '08 : 00 am'
+            });
+        } catch (error) {
+            setSubmitStatus({
+                type: 'error',
+                message: 'Failed to send reservation. Please call us at +44 7576 607122'
+            });
+        }
+    };
+
     return (
         <>
             <section className="online-reservation">
@@ -18,15 +62,56 @@ function Secreservation() {
                         </div>
 
                         <h2>Online Reservation</h2>
-                        <div className="text request-info">Booking request <Link to="#">+88-123-123456</Link> or fill out the order form</div>
+                        <div className="text request-info">Booking request <Link to="#">+44 7576 607122</Link> or fill out the order form</div>
                     </div>
                     <div className="default-form reservation-form">
-                        <form method="post" action="/">
+                        {submitStatus.message && (
+                            <div style={{
+                                padding: '15px',
+                                marginBottom: '20px',
+                                borderRadius: '4px',
+                                backgroundColor: submitStatus.type === 'success' ? '#d4edda' : '#f8d7da',
+                                color: submitStatus.type === 'success' ? '#155724' : '#721c24',
+                                border: `1px solid ${submitStatus.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+                            }}>
+                                {submitStatus.message}
+                            </div>
+                        )}
+                        <form onSubmit={handleSubmit}>
                             <div className="row clearfix">
+                                <div className="form-group col-lg-6 col-md-6 col-sm-12">
+                                    <div className="field-inner">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            value={formData.name}
+                                            onChange={handleInputChange}
+                                            placeholder="Your Name"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div className="form-group col-lg-6 col-md-6 col-sm-12">
+                                    <div className="field-inner">
+                                        <input
+                                            type="text"
+                                            name="phone"
+                                            value={formData.phone}
+                                            onChange={handleInputChange}
+                                            placeholder="Phone Number"
+                                            required
+                                        />
+                                    </div>
+                                </div>
                                 <div className="form-group col-lg-4 col-md-6 col-sm-12">
                                     <div className="field-inner">
                                         <span className="alt-icon far fa-user"></span>
-                                        <select className="l-icon">
+                                        <select
+                                            className="l-icon"
+                                            name="guests"
+                                            value={formData.guests}
+                                            onChange={handleInputChange}
+                                        >
                                             <option>1 Person</option>
                                             <option>2 Person</option>
                                             <option>3 Person</option>
@@ -41,14 +126,27 @@ function Secreservation() {
                                 <div className="form-group col-lg-4 col-md-6 col-sm-12">
                                     <div className="field-inner">
                                         <span className="alt-icon far fa-calendar"></span>
-                                        <input className="l-icon datepicker" type="text" name="fieldname" placeholder="DD-MM-YYYY" required readOnly />
+                                        <input
+                                            className="l-icon"
+                                            type="date"
+                                            name="date"
+                                            value={formData.date}
+                                            onChange={handleInputChange}
+                                            placeholder="DD-MM-YYYY"
+                                            required
+                                        />
                                         <span className="arrow-icon far fa-angle-down"></span>
                                     </div>
                                 </div>
                                 <div className="form-group col-lg-4 col-md-12 col-sm-12">
                                     <div className="field-inner">
                                         <span className="alt-icon far fa-clock"></span>
-                                        <select className="l-icon">
+                                        <select
+                                            className="l-icon"
+                                            name="time"
+                                            value={formData.time}
+                                            onChange={handleInputChange}
+                                        >
                                             <option>08 : 00 am</option>
                                             <option>09 : 00 am</option>
                                             <option>10 : 00 am</option>

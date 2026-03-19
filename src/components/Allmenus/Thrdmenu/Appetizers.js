@@ -1,21 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg19 from "../../../assets/images/background/bg-19.png";
-import bg20 from "../../../assets/images/background/bg-20.png";
-import menuimg5 from "../../../assets/images/resource/menu-image-5.png";
-import menuimg6 from "../../../assets/images/resource/menu-image-6.png";
-import menuimg7 from "../../../assets/images/resource/menu-image-7.png";
-import menuimg8 from "../../../assets/images/resource/menu-image-8.png";
-import menuimg9 from "../../../assets/images/resource/menu-image-9.png";
-import menuimg10 from "../../../assets/images/resource/menu-image-10.png";
 
 function Appetizers() {
   return (
     <>
       <section className="menu-two">
-        <div className="right-bg">
-          <img src={bg19} alt="" title="" />
-        </div>
         <div className="auto-container">
           <div className="title-box centered">
             <div className="subtitle">
@@ -31,11 +20,6 @@ function Appetizers() {
               <div className="inner">
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg5} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -57,11 +41,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg6} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -85,11 +64,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg7} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -115,11 +89,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg8} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -143,11 +112,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg9} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -169,11 +133,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg10} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -199,9 +158,6 @@ function Appetizers() {
       </section>
 
       <section className="menu-two">
-        <div className="left-bg">
-          <img src={bg20} alt="" title="" />
-        </div>
         <div className="auto-container">
           <div className="title-box centered">
             <div className="subtitle">
@@ -217,11 +173,6 @@ function Appetizers() {
               <div className="inner">
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg5} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -243,11 +194,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg6} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -271,11 +217,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg7} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -301,11 +242,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg8} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -329,11 +265,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg9} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>
@@ -355,11 +286,6 @@ function Appetizers() {
 
                 <div className="dish-block">
                   <div className="inner-box">
-                    <div className="dish-image">
-                      <Link to="#">
-                        <img src={menuimg10} alt="" />
-                      </Link>
-                    </div>
                     <div className="title clearfix">
                       <div className="ttl clearfix">
                         <h5>

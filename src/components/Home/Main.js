@@ -87,12 +87,12 @@ function Main() {
           <h2>Visit Us</h2>
           <ul className="info">
             <li>
-              Restaurant St, Delicious City, <br /> London 9578, UK
+              21 Walm Ln, London NW2 5SH
             </li>
-            <li>Open: 9.30 am - 2.30pm</li>
+            <li>Mon/Wed-Fri: 1-10pm | Tue: 6-10pm | Sat-Sun: 11am-10pm</li>
             <li>
-              <Link to="mailto:booking@domainame.com">
-                booking@domainame.com
+              <Link to="mailto:admin@arponnar.com">
+                admin@arponnar.com
               </Link>
             </li>
           </ul>
@@ -102,7 +102,7 @@ function Main() {
           <div className="booking-info">
             <div className="bk-title">Booking request</div>
             <div className="bk-no">
-              <Link to="tel:+88-123-123456">+88-123-123456</Link>
+              <Link to="tel:+447576607122">+44 7576 607122</Link>
             </div>
           </div>
         </div>

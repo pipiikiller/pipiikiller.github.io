@@ -8,9 +8,8 @@ function Quotesection() {
         <div className="image-layer" style={{ backgroundImage: `url(${Backgroundimage})` }}></div>
         <div className="auto-container">
           <div className="content-box">
-            <h3>A modern restaurant with a menu that will make your mouth water.</h3>
+            <h3>Authentic Burmese cuisine crafted with traditional flavours and time-honoured recipes.</h3>
             <div className="separator"><span></span><span></span><span></span></div>
-            <div className="auth-title">Henry - Master chef</div>
           </div>
         </div>
       </section>

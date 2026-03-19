@@ -36,3 +36,58 @@
     transform: rotate(360deg);
   }
 }
+
+/* Menu Enhancement Styles */
+
+/* Decorative icon before dish title */
+.dish-block .inner-box .title .ttl h5::before {
+  content: "\f0f5";
+  font-family: "FontAwesome";
+  margin-right: 10px;
+  color: #be9d73;
+  font-size: 14px;
+}
+
+/* Alternating background colors for menu items */
+.dish-block:nth-child(odd) .inner-box {
+  background-color: #faf8f5;
+  border-left: 3px solid #be9d73;
+  padding: 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.dish-block:nth-child(even) .inner-box {
+  background-color: #ffffff;
+  border-left: 3px solid #d4b896;
+  padding: 15px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for menu items */
+.dish-block .inner-box:hover {
+  box-shadow: 0 4px 12px rgba(190, 157, 115, 0.15);
+  transform: translateX(5px);
+}
+
+/* Decorative separator after each dish */
+.dish-block {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.dish-block::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #be9d73, transparent);
+  margin: 8px auto 0;
+  opacity: 0.3;
+}
+
+/* Remove separator from last item in column */
+.dish-block:last-child::after {
+  display: none;
+}

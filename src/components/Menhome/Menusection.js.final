@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import ClassicMenu from "../../assets/food_menus/Classic_Menu.jpeg";
-import TraditionalMenu from "../../assets/food_menus/Traditional_house_dishes.jpeg";
-import SaladsMenu from "../../assets/food_menus/Salads.jpeg";
-import HeritageMenu from "../../assets/food_menus/Heritage_Menu.jpeg";
-import DrinksDessertsMenu from "../../assets/food_menus/drinks_desserts.jpeg";
 
 function Menusection() {
   const [tabMenu, tabActive] = useState({ a: true });
@@ -84,11 +79,6 @@ function Menusection() {
             </div>
             <div className="tabs-content">
               <div className={`tab ${tabMenu.a && "active-tab"}`} id="tab-1">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={ClassicMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Classics Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -249,12 +239,8 @@ function Menusection() {
                 </div>
               </div>
 
+
               <div className={`tab ${tabMenu.b && "active-tab"}`} id="tab-2">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={TraditionalMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Traditional House Dishes Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -483,13 +469,7 @@ function Menusection() {
                   </div>
                 </div>
               </div>
-
               <div className={`tab ${tabMenu.c && "active-tab"}`} id="tab-3">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={SaladsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Salads Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -498,19 +478,14 @@ function Menusection() {
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
-                                <Link to="#">La-Phet Thoke</Link>
+                                <Link to="#">
+                                  Beef Curry
+                                </Link>
                               </h5>
                             </div>
                             <div className="price">
-                              <span>£8.50</span>
+                              <span>£16.50</span>
                             </div>
-                          </div>
-                          <div className="text desc">
-                            <Link to="#">
-                              Earthy pickled tea leaves mixed with dried prawns
-                              and double-fried legumes for a lively contrast of
-                              textures and flavours
-                            </Link>
                           </div>
                         </div>
                       </div>
@@ -561,7 +536,6 @@ function Menusection() {
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
                           <div className="title clearfix">
@@ -658,7 +632,6 @@ function Menusection() {
                           </div>
                         </div>
                       </div>
-
                       <div className="dish-block">
                         <div className="inner-box">
                           <div className="title clearfix">
@@ -686,11 +659,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.d && "active-tab"}`} id="tab-4">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={HeritageMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Heritage Sets Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -775,11 +743,6 @@ function Menusection() {
                 </div>
               </div>
               <div className={`tab ${tabMenu.e && "active-tab"}`} id="tab-5">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={TraditionalMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Menu (Wok Kissed Greens)</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -903,11 +866,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.f && "active-tab"}`} id="tab-6">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={DrinksDessertsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Drinks & Desserts Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">
@@ -1227,11 +1185,6 @@ function Menusection() {
               </div>
 
               <div className={`tab ${tabMenu.g && "active-tab"}`} id="tab-7">
-                <div className="text-center" style={{ marginBottom: "30px" }}>
-                  <a href={DrinksDessertsMenu} target="_blank" rel="noopener noreferrer" className="theme-btn btn-style-one">
-                    <span>View Full Drinks & Desserts Menu</span>
-                  </a>
-                </div>
                 <div className="row clearfix">
                   <div className="menu-col col-lg-6 col-md-12 col-sm-12">
                     <div className="inner">

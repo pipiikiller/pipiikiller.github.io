@@ -6,6 +6,7 @@ import bg6 from '../../assets/images/Contact Us - AW/CU_(640 × 417 px).png'
 import restro from '../../assets/images/Contact Us - AW/CU_(526 × 629 px).png'
 
 function Contactbanner() {
+
     return (
         <>
             <div className="contact-map">
@@ -29,8 +30,13 @@ function Contactbanner() {
 
                                 <div className="contactinfo-block col-lg-4 col-md-4 col-sm-12">
                                     <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
-                                        <h4>Lunch Time</h4>
-                                        <div className="text"> Monday to Sunday <br /> 11.00 am - 2.30pm</div>
+                                        <h4>Opening Hours</h4>
+                                        <div className="text">
+                                            Monday: 1:00 pm - 10:00 pm<br />
+                                            Tuesday: 6:00 pm - 10:00 pm<br />
+                                            Wed-Fri: 1:00 pm - 10:00 pm<br />
+                                            Sat-Sun: 11:00 am - 10:00 pm
+                                        </div>
                                     </div>
                                 </div>
 
@@ -39,15 +45,15 @@ function Contactbanner() {
                                     <div className="inner-box cp-seprator wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
                                         <h4>Contact Info</h4>
                                         <div className="text">21 Walm Ln, London NW2 5SH<br />Email : admin@arponnar.com</div>
-                                        <div className="more-link"><Link to="#">Booking : 020 3478 69106</Link></div>
+                                        <div className="more-link"><Link to="#">Booking : +44 7576 607122</Link></div>
                                     </div>
                                 </div>
 
 
                                 <div className="contactinfo-block col-lg-4 col-md-4 col-sm-12">
                                     <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
-                                        <h4>Dinner Time</h4>
-                                        <div className="text">Monday to Sunday<br />11.00 pm - 10.00 pm</div>
+                                        <h4>We are Open Daily</h4>
+                                        <div className="text">Varying Hours<br />See Opening Hours for Details</div>
                                     </div>
                                 </div>
 

@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Slideone from "../../assets/images/main-slider/hero_slider1.png";
-import Slidetwo from "../../assets/images/Home Page - AW/H_1880_×_1405_px.png";
-import Slidethree from "../../assets/images/Home Page - AW/H_1880_×_1405_px.png";
+import Slidetwo from "../../assets/images/main-slider/hero_slider1.png";
+import Slidethree from "../../assets/images/main-slider/hero_slider1.png";
 import bookicon1 from "../../assets/images/main/Book A Table.png";
 import "swiper/swiper.min.css";
 import SwiperCore, { Navigation } from "swiper";
@@ -75,7 +75,7 @@ function Banner() {
                           >
                             <div className="link">
                               <Link
-                                to="#"
+                                to="/menufour"
                                 className="theme-btn btn-style-two clearfix"
                               >
                                 <span className="btn-wrap">
@@ -106,12 +106,12 @@ function Banner() {
         <span className="fal fa-angle-right"></span>
       </div>
       <div className="book-btn">
-        <Link to="#" className="theme-btn">
+        <a href="https://www.google.com/maps/reserve/v/dine/c/jpRqwoLH7tA?opi=89978449&gei=hRa7acbqIsm7hbIPpLTsyQc&source=pa&hl=en-GB&gei=hRa7acbqIsm7hbIPpLTsyQc&sourceurl=https://www.google.com/search?q%3Darponnar%2Bburmese%2Brestaurant%26ie%3DUTF-8%26oe%3DUTF-8%26hl%3Den-gb%26client%3Dsafari%26sei%3Dgxa7afrWKrGihbIP88-DoAc%26dlnr%3D1" target="_blank" rel="noopener noreferrer" className="theme-btn">
           <span className="icon">
             <img src={bookicon1} alt="" title="" />
           </span>
           <span className="txt">book a table</span>
-        </Link>
+        </a>
       </div>
     </Swiper>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import bg3 from "../../assets/images/tell_stories/Tell A Stroy_corner.png";
 import badge1 from "../../assets/images/tell_stories/Tells A Story_6p95x6p84.png";
 import img1 from "../../assets/images/tell_stories/Tells A Story_20p_11.png";
 import img2 from "../../assets/images/tell_stories/Tells A Story_10p05.png";
@@ -9,9 +8,6 @@ function Story() {
   return (
     <>
       <section className="story-section">
-        <div className="left-bg">
-          <img src={bg3} alt="" title="" />
-        </div>
         <div className="auto-container">
           <div className="row clearfix">
             <div className="text-col col-xl-5 col-lg-5 col-md-12 col-sm-12">
@@ -42,17 +38,6 @@ function Story() {
                   <div className="bk-title">Book Through Call</div>
                   <div className="bk-no">
                     <Link to="tel:+447576607122">+44 7576 607122</Link>
-                  </div>
-                  <div className="link-box">
-                    <Link
-                      to="/about"
-                      className="theme-btn btn-style-two clearfix"
-                    >
-                      <span className="btn-wrap">
-                        <span className="text-one">Read More</span>
-                        <span className="text-two">Read More</span>
-                      </span>
-                    </Link>
                   </div>
                 </div>
               </div>

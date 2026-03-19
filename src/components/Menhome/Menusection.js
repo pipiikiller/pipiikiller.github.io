@@ -1346,8 +1346,7 @@ function Menusection() {
 
           <div className="open-timing">
             <div className="hours">
-              Daily from <span className="theme_color">12:00 pm</span> to{" "}
-              <span className="theme_color">10:00 pm</span>
+              Mon/Wed-Fri: <span className="theme_color">1-10pm</span> | Tue: <span className="theme_color">6-10pm</span> | Sat-Sun: <span className="theme_color">11am-10pm</span>
             </div>
           </div>
         </div>

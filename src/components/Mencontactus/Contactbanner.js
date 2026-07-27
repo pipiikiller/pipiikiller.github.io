@@ -1,11 +1,72 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Iframe from 'react-iframe'
 import bg25 from '../../assets/images/Contact Us - AW/CU_(321 × 371 px).png'
 import bg6 from '../../assets/images/Contact Us - AW/CU_(640 × 417 px).png'
 import restro from '../../assets/images/Contact Us - AW/CU_(526 × 629 px).png'
+import { sendReservationEmail } from '../../services/emailService'
 
 function Contactbanner() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+    const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+
+    const handleInputChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({
+            ...prev,
+            [name]: value
+        }));
+    };
+
+    const handleSubmit = (e) => {
+        if (e && e.preventDefault) {
+            e.preventDefault();
+        }
+
+        console.log('🔴 Contact form submitted:', formData);
+        setSubmitStatus({ type: '', message: '' });
+
+        // Send email using the same service
+        const reservationData = {
+            name: formData.name,
+            phone: formData.phone,
+            guests: 'Contact Form',
+            date: new Date().toLocaleDateString(),
+            time: new Date().toLocaleTimeString(),
+            message: `Email: ${formData.email}\n\n${formData.message}`
+        };
+
+        sendReservationEmail(reservationData)
+            .then((result) => {
+                console.log('✅ Contact message sent:', result);
+                setSubmitStatus({
+                    type: 'success',
+                    message: 'Message sent successfully! We will get back to you soon.'
+                });
+
+                // Reset form
+                setFormData({
+                    name: '',
+                    email: '',
+                    phone: '',
+                    message: ''
+                });
+            })
+            .catch((error) => {
+                console.error('❌ Error sending message:', error);
+                setSubmitStatus({
+                    type: 'error',
+                    message: 'Failed to send message. Please call us at +44 7576 607122'
+                });
+            });
+
+        return false;
+    };
 
     return (
         <>
@@ -44,7 +105,7 @@ function Contactbanner() {
                                 <div className="contactinfo-block col-lg-4 col-md-4 col-sm-12">
                                     <div className="inner-box cp-seprator wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
                                         <h4>Contact Info</h4>
-                                        <div className="text">21 Walm Ln, London NW2 5SH<br />Email : admin@arponnar.com</div>
+                                        <div className="text">21 Walm Ln, London NW2 5SH<br />Email : admin@arponnar.co.uk</div>
                                         <div className="more-link"><Link to="#">Booking : +44 7576 607122</Link></div>
                                     </div>
                                 </div>
@@ -72,27 +133,66 @@ function Contactbanner() {
                                     <div className="text desc">Have a question about the our service? We're here to help, contact us today</div>
                                 </div>
                                 <div className="default-form reservation-form">
-                                    <form method="post" action="/">
+                                    {submitStatus.message && (
+                                        <div style={{
+                                            padding: '15px',
+                                            marginBottom: '20px',
+                                            borderRadius: '4px',
+                                            backgroundColor: submitStatus.type === 'success' ? '#d4edda' : '#f8d7da',
+                                            color: submitStatus.type === 'success' ? '#155724' : '#721c24',
+                                            border: `1px solid ${submitStatus.type === 'success' ? '#c3e6cb' : '#f5c6cb'}`
+                                        }}>
+                                            {submitStatus.message}
+                                        </div>
+                                    )}
+                                    <form onSubmit={handleSubmit} action="#">
                                         <div className="clearfix">
                                             <div className="form-group">
                                                 <div className="field-inner">
-                                                    <input type="text" name="fieldname" placeholder="Your Name" required="" />
+                                                    <input
+                                                        type="text"
+                                                        name="name"
+                                                        value={formData.name}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Your Name"
+                                                        required
+                                                    />
                                                 </div>
                                             </div>
                                             <div className="form-group">
                                                 <div className="field-inner">
-                                                    <input type="text" name="fieldname" placeholder="Your Email" required="" />
+                                                    <input
+                                                        type="email"
+                                                        name="email"
+                                                        value={formData.email}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Your Email"
+                                                        required
+                                                    />
                                                 </div>
                                             </div>
                                             <div className="form-group ">
                                                 <div className="field-inner">
-                                                    <input type="text" name="fieldname" placeholder="Phone Number" required="" />
+                                                    <input
+                                                        type="text"
+                                                        name="phone"
+                                                        value={formData.phone}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Phone Number"
+                                                        required
+                                                    />
                                                 </div>
                                             </div>
 
                                             <div className="form-group ">
                                                 <div className="field-inner">
-                                                    <textarea name="fieldname" placeholder="Special Request" required=""></textarea>
+                                                    <textarea
+                                                        name="message"
+                                                        value={formData.message}
+                                                        onChange={handleInputChange}
+                                                        placeholder="Special Request"
+                                                        required
+                                                    ></textarea>
                                                 </div>
                                             </div>
 

@@ -40,6 +40,19 @@ function Story() {
                     <Link to="tel:+447576607122">+44 7576 607122</Link>
                   </div>
                 </div>
+                <div className="news-link" style={{ marginTop: '30px', textAlign: 'center' }}>
+                  <a
+                    href="https://www.broadsheet.com/london/articles/arponnar-brings-homestyle-burmese-cooking"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="theme-btn btn-style-one clearfix"
+                  >
+                    <span className="btn-wrap">
+                      <span className="text-one">Read More About Us on the News</span>
+                      <span className="text-two">Read More About Us on the News</span>
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
 

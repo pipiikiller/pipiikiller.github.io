@@ -1,18 +1,32 @@
-import emailjs from '@emailjs/browser';
+let emailjs;
+
+try {
+  emailjs = require('@emailjs/browser');
+  console.log('📧 EmailJS module loaded successfully');
+} catch (error) {
+  console.error('❌ Failed to load EmailJS module:', error);
+}
 
 // EmailJS Configuration
-// Replace these with your actual EmailJS credentials from https://www.emailjs.com/
 const EMAILJS_CONFIG = {
-  SERVICE_ID: 'template_pztyyuu', // EmailJS service ID
-  TEMPLATE_ID_RESERVATION: 'template_pztyyuu', // Template for reservation form
-  PUBLIC_KEY: '8VC_wwudiMNF5hSnw', // EmailJS public key
+  SERVICE_ID: 'service_0mod38i',
+  TEMPLATE_ID_RESERVATION: 'template_24v6fhh',
+  PUBLIC_KEY: 'GeZKrgZnIk0d1Mepf',
 };
 
 /**
  * Initialize EmailJS with your public key
  */
 export const initEmailJS = () => {
-  emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+  try {
+    if (!emailjs) {
+      throw new Error('EmailJS module not loaded');
+    }
+    emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+    console.log('✅ EmailJS initialized successfully');
+  } catch (error) {
+    console.error('❌ Failed to initialize EmailJS:', error);
+  }
 };
 
 /**
@@ -22,22 +36,33 @@ export const initEmailJS = () => {
  */
 export const sendReservationEmail = async (formData) => {
   try {
+    console.log('📤 Sending email with data:', formData);
+
+    if (!emailjs) {
+      throw new Error('EmailJS module not loaded');
+    }
+
+    const templateParams = {
+      to_email: 'admin@arponnar.co.uk',
+      from_name: formData.name,
+      phone: formData.phone,
+      guests: formData.guests,
+      date: formData.date,
+      time: formData.time,
+      message: formData.message || 'No special requests',
+    };
+
     const response = await emailjs.send(
       EMAILJS_CONFIG.SERVICE_ID,
       EMAILJS_CONFIG.TEMPLATE_ID_RESERVATION,
-      {
-        to_email: 'admin@arponnar.com',
-        from_name: formData.name,
-        phone: formData.phone,
-        guests: formData.guests,
-        date: formData.date,
-        time: formData.time,
-        message: formData.message || 'No special requests',
-      }
+      templateParams
     );
+
+    console.log('✅ Email sent successfully:', response);
     return response;
   } catch (error) {
-    console.error('Failed to send reservation email:', error);
+    console.error('❌ Failed to send reservation email:', error);
+    console.error('Error details:', error.text || error.message);
     throw error;
   }
 };

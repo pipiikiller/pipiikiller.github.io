@@ -272,22 +272,13 @@ function Menusection() {
                               <span>£16.50</span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Chicken Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£15.50</span>
-                            </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Tender beef slow-braised with onions, garlic,
+                              ginger, freshly chopped tomatoes and traditional
+                              Burmese spices, creating a rich, aromatic curry
+                              full of deep, authentic flavour.
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -297,12 +288,47 @@ function Menusection() {
                           <div className="title clearfix">
                             <div className="ttl clearfix">
                               <h5>
-                                <Link to="#">Pork Curry</Link>
+                                <Link to="#">
+                                  Chicken Masalar
+                                </Link>
+                              </h5>
+                            </div>
+                            <div className="price">
+                              <span>£15.50</span>
+                            </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Chicken thighs slow-cooked with onions, garlic,
+                              ginger, tomatoes, and aromatic Burmese spices,
+                              creating a rich, fragrant curry with bold,
+                              authentic flavour, extra enhanced with a topping
+                              of Ka Lar Lay masalar.
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="dish-block">
+                        <div className="inner-box">
+                          <div className="title clearfix">
+                            <div className="ttl clearfix">
+                              <h5>
+                                <Link to="#">Three Layers Pork Stew</Link>
                               </h5>
                             </div>
                             <div className="price">
                               <span>£16.50</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Slow-braised pork belly with garlic, ginger, fried
+                              onion, dark soya sauce, oyster sauce and
+                              traditional Burmese seasonings, creating a rich,
+                              savoury stew with melt-in-the-mouth layers of meat
+                              and fat.
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -320,6 +346,14 @@ function Menusection() {
                             <div className="price">
                               <span>£17.50</span>
                             </div>
+                          </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Succulent prawns cooked with fresh tomatoes,
+                              garlic, onions, and traditional Burmese seasonings,
+                              creating a light, tangy, and savoury curry full of
+                              authentic flavour.
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -392,6 +426,15 @@ function Menusection() {
                               <span>£16.50</span>
                             </div>
                           </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Fresh water Burmese fish marinated with turmeric
+                              and fish sauce, cooked with coriander, fresh green
+                              chillies, tamarind, garlic, ginger, and
+                              traditional Burmese spices, creating a fragrant,
+                              tangy, and authentic home-style curry.
+                            </Link>
+                          </div>
                         </div>
                       </div>
 
@@ -409,39 +452,13 @@ function Menusection() {
                               <span>£13.50</span>
                             </div>
                           </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Potato Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£13.50</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div className="dish-block">
-                        <div className="inner-box">
-                          <div className="title clearfix">
-                            <div className="ttl clearfix">
-                              <h5>
-                                <Link to="#">
-                                  Chickpea Curry
-                                </Link>
-                              </h5>
-                            </div>
-                            <div className="price">
-                              <span>£13.50</span>
-                            </div>
+                          <div className="text desc">
+                            <Link to="#">
+                              Tender aubergine with fermented soybean paste,
+                              garlic, ginger, and traditional Burmese seasonings,
+                              creating a rich, savoury, and flavourful vegan
+                              curry.
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -801,6 +818,15 @@ function Menusection() {
                               onion, olives, and feta cheese.
                             </Link>
                           </div> */}
+                          <div className="text desc">
+                            <Link to="#">
+                              Fresh morning glory stir-fried over high heat with
+                              fragrant garlic and authentic Burmese fish paste,
+                              creating a savoury, aromatic dish with crisp,
+                              tender greens. Perfect as a side or with steamed
+                              rice.
+                            </Link>
+                          </div>
                         </div>
                       </div>
 
@@ -846,6 +872,14 @@ function Menusection() {
                               dummy text of the priand.
                             </Link>
                           </div> */}
+                          <div className="text desc">
+                            <Link to="#">
+                              Fresh cabbage stir-fried with garlic, fluffy egg,
+                              and traditional Burmese seasonings, creating a
+                              light, savoury dish with a soft, comforting
+                              texture.
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -873,6 +907,13 @@ function Menusection() {
                               seasonings and spices.
                             </Link>
                           </div> */}
+                          <div className="text desc">
+                            <Link to="#">
+                              Fresh cauliflower stir-fried with garlic and
+                              traditional Burmese seasonings, creating a light,
+                              savoury dish with a tender yet crisp texture.
+                            </Link>
+                          </div>
                         </div>
                       </div>
 

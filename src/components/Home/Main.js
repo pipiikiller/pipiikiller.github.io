@@ -91,8 +91,8 @@ function Main() {
             </li>
             <li>Mon/Wed-Fri: 1-10pm | Tue: 6-10pm | Sat-Sun: 11am-10pm</li>
             <li>
-              <Link to="mailto:admin@arponnar.com">
-                admin@arponnar.com
+              <Link to="mailto:admin@arponnar.co.uk">
+                admin@arponnar.co.uk
               </Link>
             </li>
           </ul>

@@ -18,7 +18,7 @@ function Main() {
                                         <div className="info">
                                             <ul>
                                                 <li>21 Walm Ln, London NW2 5SH</li>
-                                                <li><Link to="mailto:admin@arponnar.com">admin@arponnar.com</Link></li>
+                                                <li><Link to="mailto:admin@arponnar.co.uk">admin@arponnar.co.uk</Link></li>
                                                 <li><Link to="tel:+447576607122">Booking Request : +44 7576 607122</Link></li>
                                                 <li>Mon/Wed-Fri: 1-10pm | Tue: 6-10pm | Sat-Sun: 11am-10pm</li>
                                             </ul>
@@ -31,7 +31,6 @@ function Main() {
                                 <div className="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
                                     <ul className="links">
                                         <li> <Link to="/">Home</Link></li>
-                                        <li> <Link to="/menu">Menus</Link></li>
                                         <li> <Link to="/contact">Contact</Link></li>
                                     </ul>
                                 </div>

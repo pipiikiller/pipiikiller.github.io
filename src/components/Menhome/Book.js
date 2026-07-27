@@ -79,7 +79,7 @@ function Book() {
                                 {submitStatus.message}
                             </div>
                         )}
-                        <form onSubmit={handleSubmit}>
+                        <form onSubmit={handleSubmit} action="#">
                             <div className="row clearfix">
                                 <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                     <div className="field-inner">
@@ -196,7 +196,7 @@ function Book() {
                                         </div>
                                         <div className="data">
                                             <ul className="info">
-                                                <li><strong>Contact Us</strong><br />21 Walm Ln, London NW2 5SH <br /> Call : +44 7576 607122 <br /> Email : admin@arponnar.com </li>
+                                                <li><strong>Contact Us</strong><br />21 Walm Ln, London NW2 5SH <br /> Call : +44 7576 607122 <br /> Email : admin@arponnar.co.uk </li>
                                                 <div className="separator"><span></span></div>
                                                 <li><strong>Opening Hours</strong><br />
                                                     Monday: 1:00 pm - 10:00 pm<br />
@@ -225,7 +225,7 @@ function Book() {
                                 <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
                                     <div className="icon-box"><img src={ny} alt="" /></div>
                                     <h4>New York</h4>
-                                    <div className="text">Restaurant St, Delicious City, NY. <br /> +44 7576 607122<br />admin@arponnar.com</div>
+                                    <div className="text">Restaurant St, Delicious City, NY. <br /> +44 7576 607122<br />admin@arponnar.co.uk</div>
                                     <div className="more-link"><Link to="#">get direction</Link></div>
                                 </div>
                             </div>
@@ -235,7 +235,7 @@ function Book() {
                                 <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="300ms">
                                     <div className="icon-box"><img src={dubai} alt="" /></div>
                                     <h4>Dubai</h4>
-                                    <div className="text">520, Delicious City, Revenu Db.<br />+44 7576 607122<br />admin@arponnar.com</div>
+                                    <div className="text">520, Delicious City, Revenu Db.<br />+44 7576 607122<br />admin@arponnar.co.uk</div>
                                     <div className="more-link"><Link to="#">get direction</Link></div>
                                 </div>
                             </div>
@@ -245,7 +245,7 @@ function Book() {
                                 <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="600ms">
                                     <div className="icon-box"><img src={paris} alt="" /></div>
                                     <h4>Paris</h4>
-                                    <div className="text">589, Delicious Avenue PS.<br />+44 7576 607122 <br /> admin@arponnar.com</div>
+                                    <div className="text">589, Delicious Avenue PS.<br />+44 7576 607122 <br /> admin@arponnar.co.uk</div>
                                     <div className="more-link"><Link to="#">get direction</Link></div>
                                 </div>
                             </div>
@@ -255,7 +255,7 @@ function Book() {
                                 <div className="inner-box wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="900ms">
                                     <div className="icon-box"><img src={toronto} alt="" /></div>
                                     <h4>Toronto</h4>
-                                    <div className="text">Restaurant St, Delicious City, CA <br /> +44 7576 607122 <br /> admin@arponnar.com</div>
+                                    <div className="text">Restaurant St, Delicious City, CA <br /> +44 7576 607122 <br /> admin@arponnar.co.uk</div>
                                     <div className="more-link"><Link to="#">get direction</Link></div>
                                 </div>
                             </div>

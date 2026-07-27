@@ -66,7 +66,7 @@ function Aboutsec() {
                                         Sunday: 11:00 am - 10:00 pm
                                     </li>
                                     <li className="separator"><span></span></li>
-                                    <li><strong>Contact Us</strong><span className="address">21 Walm Ln, London NW2 5SH</span> <Link to="tel:+447576607122">+44 7576 607122</Link> <br /><Link to="mailto:admin@arponnar.com">admin@arponnar.com</Link></li>
+                                    <li><strong>Contact Us</strong><span className="address">21 Walm Ln, London NW2 5SH</span> <Link to="tel:+447576607122">+44 7576 607122</Link> <br /><Link to="mailto:admin@arponnar.co.uk">admin@arponnar.co.uk</Link></li>
                                 </ul>
                             </div>
                         </div>

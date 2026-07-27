@@ -7,8 +7,13 @@ import { initEmailJS } from './services/emailService';
 
 export default function App() {
   useEffect(() => {
-    // Initialize EmailJS when app loads
-    initEmailJS();
+    console.log('🚀 App component mounted');
+    try {
+      initEmailJS();
+      console.log('✅ EmailJS initialized');
+    } catch (error) {
+      console.error('❌ Failed to initialize EmailJS:', error);
+    }
   }, []);
 
   return (

@@ -10,6 +10,7 @@ import { sendReservationEmail } from '../../services/emailService';
 
 SwiperCore.use([Controller]);
 function Contact() {
+    console.log('🔵 Contact component rendered');
 
     const swiper1 = useRef(null);
     const swiper2 = useRef(null);
@@ -45,31 +46,44 @@ function Contact() {
         }));
     };
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
+    const handleSubmit = (e) => {
+        if (e && e.preventDefault) {
+            e.preventDefault();
+        }
+
+        console.log('=== FORM SUBMIT HANDLER CALLED ===');
+        console.log('Form data:', formData);
+
         setSubmitStatus({ type: '', message: '' });
 
-        try {
-            await sendReservationEmail(formData);
-            setSubmitStatus({
-                type: 'success',
-                message: 'Reservation request sent successfully! We will contact you shortly.'
+        // Send email asynchronously
+        sendReservationEmail(formData)
+            .then((result) => {
+                console.log('✅ Email sent successfully:', result);
+                setSubmitStatus({
+                    type: 'success',
+                    message: 'Reservation request sent successfully! We will contact you shortly.'
+                });
+
+                // Reset form
+                setFormData({
+                    name: '',
+                    phone: '',
+                    guests: '1 Person',
+                    date: '',
+                    time: '08 : 00 am',
+                    message: ''
+                });
+            })
+            .catch((error) => {
+                console.error('❌ Error sending email:', error);
+                setSubmitStatus({
+                    type: 'error',
+                    message: 'Failed to send reservation. Please call us at +44 7576 607122'
+                });
             });
-            // Reset form
-            setFormData({
-                name: '',
-                phone: '',
-                guests: '1 Person',
-                date: '',
-                time: '08 : 00 am',
-                message: ''
-            });
-        } catch (error) {
-            setSubmitStatus({
-                type: 'error',
-                message: 'Failed to send reservation. Please call us at +44 7576 607122'
-            });
-        }
+
+        return false;
     };
 
     return (
@@ -166,6 +180,13 @@ function Contact() {
                                         <div className="request-info">Booking request <Link to="#">+44 7576 607122</Link> or fill out the order form</div>
                                     </div>
                                     <div className="default-form reservation-form">
+                                        <button
+                                            type="button"
+                                            onClick={() => console.log('🧪 Test button clicked!')}
+                                            style={{padding: '10px', marginBottom: '10px', background: 'blue', color: 'white'}}
+                                        >
+                                            TEST BUTTON (Check Console)
+                                        </button>
                                         {submitStatus.message && (
                                             <div style={{
                                                 padding: '15px',
@@ -178,7 +199,7 @@ function Contact() {
                                                 {submitStatus.message}
                                             </div>
                                         )}
-                                        <form onSubmit={handleSubmit}>
+                                        <form onSubmit={handleSubmit} action="#">
                                             <div className="row clearfix">
                                                 <div className="form-group col-lg-6 col-md-6 col-sm-12">
                                                     <div className="field-inner">

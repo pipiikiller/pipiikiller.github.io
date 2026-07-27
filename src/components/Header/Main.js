@@ -103,7 +103,7 @@ function Main() {
                     <ul className="info">
                         <li>21 Walm Ln, London NW2 5SH</li>
                         <li>Mon/Wed-Fri: 1-10pm | Tue: 6-10pm | Sat-Sun: 11am-10pm</li>
-                        <li><Link to="mailto:admin@arponnar.com">admin@arponnar.com</Link></li>
+                        <li><Link to="mailto:admin@arponnar.co.uk">admin@arponnar.co.uk</Link></li>
                     </ul>
                     <div className="separator"><span></span></div>
                     <div className="booking-info">
@@ -127,7 +127,7 @@ function Main() {
                                 <div className="top-right clearfix">
                                     <ul className="top-info clearfix">
                                         <li><Link to="tel:+447576607122"><i className="icon far fa-phone"></i> +44 7576 607122 </Link> </li>
-                                        <li><Link to="mailto:admin@arponnar.com"><i className="icon far fa-envelope"></i> admin@arponnar.com</Link></li>
+                                        <li><Link to="mailto:admin@arponnar.co.uk"><i className="icon far fa-envelope"></i> admin@arponnar.co.uk</Link></li>
                                     </ul>
                                 </div>
                             </div>

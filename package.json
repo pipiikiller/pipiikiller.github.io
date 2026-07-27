@@ -1,7 +1,7 @@
 {
   "name": "delici-project",
   "version": "0.1.0",
-  "homepage": "https://pipiikiller.github.io",
+  "homepage": "https://arponnar.co.uk",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

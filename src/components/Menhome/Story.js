@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import badge1 from "../../assets/images/tell_stories/Tells A Story_6p95x6p84.png";
 import img1 from "../../assets/images/tell_stories/Tells A Story_20p_11.png";
-import img2 from "../../assets/images/tell_stories/Tells A Story_10p05.png";
 
 function Story() {
   return (
@@ -68,9 +67,6 @@ function Story() {
                 <div className="images parallax-scene-1">
                   <div className="image" data-depth="0.15">
                     <img src={img1} alt="" />
-                  </div>
-                  <div className="image" data-depth="0.30">
-                    {/* <img src={img2} alt="" /> */}
                   </div>
                 </div>
               </div>

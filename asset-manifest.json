@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9e121391.css",
-    "main.js": "/static/js/main.cde05507.js",
+    "main.js": "/static/js/main.f4ca8f38.js",
     "static/js/787.76d25a7e.chunk.js": "/static/js/787.76d25a7e.chunk.js",
     "static/media/H (1880 × 1405 px).png": "/static/media/H (1880 × 1405 px).370982aa8024a022612f.png",
     "static/media/H_1880_×_1405_px.png": "/static/media/H_1880_×_1405_px.370982aa8024a022612f.png",
@@ -61,7 +61,6 @@
     "static/media/About (255 × 453 px).png": "/static/media/About (255 × 453 px).9b1e2760dcf984bf6d36.png",
     "static/media/menus-desert.jpg": "/static/media/menus-desert.8c7a3b5a8675ec80ab05.jpg",
     "static/media/About (241 × 385 px).png": "/static/media/About (241 × 385 px).18967c0ffd54492c2842.png",
-    "static/media/Tells A Story_10p05.png": "/static/media/Tells A Story_10p05.63d22dd0cde5e6553c04.png",
     "static/media/team-2.jpg": "/static/media/team-2.b2443a460601f40746f8.jpg",
     "static/media/team-3.jpg": "/static/media/team-3.b36c21977754d74e243d.jpg",
     "static/media/pattern-8.svg": "/static/media/pattern-8.148d9c075c75a3e657f7.svg",
@@ -129,11 +128,11 @@
     "static/media/separator.svg": "/static/media/separator.b98c0c4c2ec1b7cd59081d579005a85a.svg",
     "index.html": "/index.html",
     "main.9e121391.css.map": "/static/css/main.9e121391.css.map",
-    "main.cde05507.js.map": "/static/js/main.cde05507.js.map",
+    "main.f4ca8f38.js.map": "/static/js/main.f4ca8f38.js.map",
     "787.76d25a7e.chunk.js.map": "/static/js/787.76d25a7e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9e121391.css",
-    "static/js/main.cde05507.js"
+    "static/js/main.f4ca8f38.js"
   ]
 }
